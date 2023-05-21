@@ -13,7 +13,7 @@ public class ComputadoraFactory {
         String clave = "a" + memoriaRam + ":" + almacenamiento;
 
         //2. se valida si la key existe
-        if(computadoraMap.containsKey(clave)){
+        if(!computadoraMap.containsKey(clave)){
             //3. si existe la key se devuelve el valor asociado. En caso contrario procede a crear un objeto en el Map y luego devolvemos
             computadoraMap.put(clave, new Computadora(memoriaRam, almacenamiento));
 

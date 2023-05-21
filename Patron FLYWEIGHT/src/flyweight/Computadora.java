@@ -12,7 +12,7 @@ public class Computadora {
         this.almacenamiento = almacenamiento;
         codigo = "Memoria RAM: "+ memoriaRam +" - Almacenamiento en GB" + almacenamiento;
         contador++;
-        System.out.println("Registro numero: " + contador);
+        System.out.println("Se ha creado : " + contador + " Computadores.");
     }
 
     //GETTERS AND SETTERS
@@ -39,5 +39,16 @@ public class Computadora {
 
     public void setCodigo(String codigo) {
         this.codigo = codigo;
+    }
+
+    //con este método, mostrmos los valores de los PC's creados por consola:
+
+    @Override
+    public String toString() {
+        return "Computadora{" +
+                "memoriaRam=" + memoriaRam +
+                ", almacenamiento=" + almacenamiento +
+                ", codigo='" + codigo + '\'' +
+                '}';
     }
 }
