@@ -1,0 +1,4 @@
+2023-05-26 23:52:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ANIMAL" no encontrada
+Table "ANIMAL" not found; SQL statement:
+DELETE FROM ANIMAL WHERE ID = 1; [42102-214]
