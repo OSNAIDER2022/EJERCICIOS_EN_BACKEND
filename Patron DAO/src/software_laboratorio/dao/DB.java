@@ -31,6 +31,6 @@ public class DB {
     public static Connection getConnection() throws Exception{
         //Cargamos el driver H2:
         Class.forName("org.h2.Driver");
-        return DriverManager.getConnection("jdbc:h2:~/github/EJERCICIOS_EN_BACKEND/'Patron DAO'/src/software_laboratorio","root","toor");
+        return DriverManager.getConnection("jdbc:h2:~/github/EJERCICIOS_EN_BACKEND/Patron DAO/src/software_laboratorio","root","toor");
     }
 }
