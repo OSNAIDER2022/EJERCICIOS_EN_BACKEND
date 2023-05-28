@@ -6,6 +6,7 @@ import software_laboratorio.model.Medicamento;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.List;
 
 public class MedicamentoH2DAO implements IDao<Medicamento>{
     //creamos las variables a utilizar
@@ -26,7 +27,7 @@ public class MedicamentoH2DAO implements IDao<Medicamento>{
             psInsert.setInt(5,medicamento.getCantidad());
             psInsert.setDouble(6,medicamento.getPrecio());
             psInsert.execute();
-            LOGGER.info("Se ha guardado un medicamento");
+
 
         }catch (Exception e){
             e.printStackTrace();
@@ -37,8 +38,27 @@ public class MedicamentoH2DAO implements IDao<Medicamento>{
                 e2.printStackTrace();
             }
         }
+        LOGGER.info("Se ha guardado un medicamento");
         return medicamento;
+    }
 
+    @Override
+    public Medicamento buscar(Integer id) {
+        return null;
+    }
 
+    @Override
+    public void actualizar(Medicamento medicamento) {
+
+    }
+
+    @Override
+    public void eliminar(Integer id) {
+
+    }
+
+    @Override
+    public List<Medicamento> buscarTodos() {
+        return null;
     }
 }

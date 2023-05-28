@@ -6,16 +6,18 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class DB {
-    private static final String SQL_DROP_CREATE = "DROP TABLE IF EXISTS MEDICAMENTOS;"+
-            "CREATE TABLE MEDICAMENTOS(ID INT PRIMARY KEY, CODIGO VARCHAR(100) NOT NULL, NOMBRE VARCHAR(100) NOT NULL, LABORATORIO VARCHAR(100) NOT NULL, CANTIDAD INT NOT NULL, PRECIO NUMERIC(10,2) NOT NULL);";
+    private static final String SQL_DROP_CREATE_TABLES = "DROP TABLE IF EXISTS MEDICAMENTOS, PACIENTES, DOMICILIOS;"+
+            "CREATE TABLE MEDICAMENTOS(ID INT PRIMARY KEY, CODIGO VARCHAR(100) NOT NULL, NOMBRE VARCHAR(100) NOT NULL, LABORATORIO VARCHAR(100) NOT NULL, CANTIDAD INT NOT NULL, PRECIO NUMERIC(10,2) NOT NULL);"+
+            "CREATE TABLE PACIENTES(ID INT PRIMARY KEY AUTO_INCREMENT, NOMBRE VARCHAR(100) NOT NULL, APELLIDO VARCHAR(100) NOT NULL, IDENTIFICACION VARCHAR(100) NOT NULL, FECHA_INGRESO DATE NOT NULL, DOMICILIO_ID INT NOT NULL);"+
+            "CREATE TABLE DOMICILIOS(ID INT PRIMARY KEY AUTO_INCREMENT, CALLE VARCHAR(100) NOT NULL, NUMERO VARCHAR(100) NOT NULL, LOCALIDAD VARCHAR(100) NOT NULL, PROVINCIA VARCHAR(100) NOT NULL);";
 
-    public static void crearTabla(){
+
+    public static void crearTablas(){
         Connection connection = null;
         try{
             connection = getConnection();
             Statement statement = connection.createStatement();
-            statement.execute(SQL_DROP_CREATE);
-
+            statement.execute(SQL_DROP_CREATE_TABLES);
 
         }catch (Exception e){
             e.printStackTrace();

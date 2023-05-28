@@ -8,7 +8,7 @@ import software_laboratorio.service.MedicamentoService;
 public class Cliente {
     public static void main(String[] args) {
         //primero: Se crean las tablas
-        DB.crearTabla();
+        DB.crearTablas();
         //segundo: Se prepara un medicamento a guardar
         Medicamento medicamento = new Medicamento(1,"H36SG22","AMOXICILINA","GENFAR",30,34.0);
         MedicamentoService medicamentoService = new MedicamentoService(new MedicamentoH2DAO());
