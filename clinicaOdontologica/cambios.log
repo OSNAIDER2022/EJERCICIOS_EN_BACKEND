@@ -1,0 +1,54 @@
+[ 2023 - 06 - 04 13:57:40 ] [ INFO  ] [ PacienteH2DAO:29 ] Se ha iniciado el guardado de un PACIENTE
+[ 2023 - 06 - 04 13:57:40 ] [ WARN  ] [ PacienteH2DAO:50 ] ADVERTENCIA: Se ha producido un error en la ejecucion de GUARDAR PACIENTE. Por tanto, se intentará cerrar la conexion con la DB
+[ 2023 - 06 - 04 13:57:40 ] [ INFO  ] [ PacienteH2DAO:57 ] Se ha finalizado el guardado de un PACIENTE exitosamente
+[ 2023 - 06 - 04 14:03:25 ] [ INFO  ] [ PacienteH2DAO:29 ] Se ha iniciado el guardado de un PACIENTE
+[ 2023 - 06 - 04 14:03:25 ] [ WARN  ] [ PacienteH2DAO:50 ] ADVERTENCIA: Se ha producido un error en la ejecucion de GUARDAR PACIENTE. Por tanto, se intentará cerrar la conexion con la DB
+[ 2023 - 06 - 04 14:03:25 ] [ INFO  ] [ PacienteH2DAO:57 ] Se ha finalizado el guardado de un PACIENTE exitosamente
+[ 2023 - 06 - 04 15:50:00 ] [ INFO  ] [ PacienteH2DAO:28 ] Se ha iniciado el guardado de un PACIENTE
+[ 2023 - 06 - 04 15:50:00 ] [ WARN  ] [ PacienteH2DAO:50 ] ADVERTENCIA: Se ha producido un error en la ejecucion de GUARDAR PACIENTE. Por tanto, se intentará cerrar la conexion con la DB
+[ 2023 - 06 - 04 15:50:00 ] [ INFO  ] [ PacienteH2DAO:57 ] Se ha finalizado el guardado de un PACIENTE exitosamente
+[ 2023 - 06 - 04 15:56:05 ] [ INFO  ] [ PacienteH2DAO:28 ] Se ha iniciado el guardado de un PACIENTE
+[ 2023 - 06 - 04 15:56:05 ] [ WARN  ] [ PacienteH2DAO:50 ] ADVERTENCIA: Se ha producido un error en la ejecucion de GUARDAR PACIENTE. Por tanto, se intentará cerrar la conexion con la DB
+[ 2023 - 06 - 04 15:56:05 ] [ INFO  ] [ PacienteH2DAO:57 ] Se ha finalizado el guardado de un PACIENTE exitosamente
+[ 2023 - 06 - 04 16:02:49 ] [ INFO  ] [ PacienteH2DAO:28 ] Se ha iniciado el guardado de un PACIENTE
+[ 2023 - 06 - 04 16:02:49 ] [ WARN  ] [ PacienteH2DAO:50 ] ADVERTENCIA: Se ha producido un error en la ejecucion de GUARDAR PACIENTE. Por tanto, se intentará cerrar la conexion con la DB
+[ 2023 - 06 - 04 16:02:49 ] [ INFO  ] [ PacienteH2DAO:57 ] Se ha finalizado el guardado de un PACIENTE exitosamente
+[ 2023 - 06 - 04 16:10:29 ] [ INFO  ] [ PacienteH2DAO:28 ] Se ha iniciado el guardado de un PACIENTE
+[ 2023 - 06 - 04 16:10:29 ] [ WARN  ] [ PacienteH2DAO:50 ] ADVERTENCIA: Se ha producido un error en la ejecucion de GUARDAR PACIENTE. Por tanto, se intentará cerrar la conexion con la DB
+[ 2023 - 06 - 04 16:10:29 ] [ INFO  ] [ PacienteH2DAO:57 ] Se ha finalizado el guardado de un PACIENTE exitosamente
+[ 2023 - 06 - 04 16:16:11 ] [ INFO  ] [ PacienteH2DAO:203 ] Se ha iniciado la busqueda de un PACIENTE por EMAIL
+[ 2023 - 06 - 04 16:16:11 ] [ WARN  ] [ PacienteH2DAO:220 ] ADVERTENCIA: Se ha producido un error en la ejecucion de BUSCAR PACIENTE POR EMAIL. Por tanto, se intentará cerrar la conexion con la DB
+[ 2023 - 06 - 04 16:16:11 ] [ INFO  ] [ PacienteH2DAO:227 ] Se ha finalizado la busqueda de un BUSCAR PACIENTE POR EMAIL exitosamente
+[ 2023 - 06 - 04 16:16:25 ] [ INFO  ] [ PacienteH2DAO:203 ] Se ha iniciado la busqueda de un PACIENTE por EMAIL
+[ 2023 - 06 - 04 16:16:25 ] [ WARN  ] [ PacienteH2DAO:220 ] ADVERTENCIA: Se ha producido un error en la ejecucion de BUSCAR PACIENTE POR EMAIL. Por tanto, se intentará cerrar la conexion con la DB
+[ 2023 - 06 - 04 16:16:25 ] [ INFO  ] [ PacienteH2DAO:227 ] Se ha finalizado la busqueda de un BUSCAR PACIENTE POR EMAIL exitosamente
+[ 2023 - 06 - 04 16:16:31 ] [ INFO  ] [ PacienteH2DAO:203 ] Se ha iniciado la busqueda de un PACIENTE por EMAIL
+[ 2023 - 06 - 04 16:16:31 ] [ WARN  ] [ PacienteH2DAO:220 ] ADVERTENCIA: Se ha producido un error en la ejecucion de BUSCAR PACIENTE POR EMAIL. Por tanto, se intentará cerrar la conexion con la DB
+[ 2023 - 06 - 04 16:16:31 ] [ INFO  ] [ PacienteH2DAO:227 ] Se ha finalizado la busqueda de un BUSCAR PACIENTE POR EMAIL exitosamente
+[ 2023 - 06 - 04 16:23:55 ] [ INFO  ] [ PacienteH2DAO:203 ] Se ha iniciado la busqueda de un PACIENTE por EMAIL
+[ 2023 - 06 - 04 16:23:55 ] [ WARN  ] [ PacienteH2DAO:220 ] ADVERTENCIA: Se ha producido un error en la ejecucion de BUSCAR PACIENTE POR EMAIL. Por tanto, se intentará cerrar la conexion con la DB
+[ 2023 - 06 - 04 16:23:55 ] [ INFO  ] [ PacienteH2DAO:227 ] Se ha finalizado la busqueda de un BUSCAR PACIENTE POR EMAIL exitosamente
+[ 2023 - 06 - 04 16:24:30 ] [ INFO  ] [ PacienteH2DAO:203 ] Se ha iniciado la busqueda de un PACIENTE por EMAIL
+[ 2023 - 06 - 04 16:24:30 ] [ WARN  ] [ PacienteH2DAO:220 ] ADVERTENCIA: Se ha producido un error en la ejecucion de BUSCAR PACIENTE POR EMAIL. Por tanto, se intentará cerrar la conexion con la DB
+[ 2023 - 06 - 04 16:24:30 ] [ INFO  ] [ PacienteH2DAO:227 ] Se ha finalizado la busqueda de un BUSCAR PACIENTE POR EMAIL exitosamente
+[ 2023 - 06 - 04 16:24:36 ] [ INFO  ] [ PacienteH2DAO:203 ] Se ha iniciado la busqueda de un PACIENTE por EMAIL
+[ 2023 - 06 - 04 16:24:36 ] [ WARN  ] [ PacienteH2DAO:220 ] ADVERTENCIA: Se ha producido un error en la ejecucion de BUSCAR PACIENTE POR EMAIL. Por tanto, se intentará cerrar la conexion con la DB
+[ 2023 - 06 - 04 16:24:36 ] [ INFO  ] [ PacienteH2DAO:227 ] Se ha finalizado la busqueda de un BUSCAR PACIENTE POR EMAIL exitosamente
+[ 2023 - 06 - 04 16:25:03 ] [ INFO  ] [ PacienteH2DAO:203 ] Se ha iniciado la busqueda de un PACIENTE por EMAIL
+[ 2023 - 06 - 04 16:25:03 ] [ WARN  ] [ PacienteH2DAO:220 ] ADVERTENCIA: Se ha producido un error en la ejecucion de BUSCAR PACIENTE POR EMAIL. Por tanto, se intentará cerrar la conexion con la DB
+[ 2023 - 06 - 04 16:25:03 ] [ INFO  ] [ PacienteH2DAO:227 ] Se ha finalizado la busqueda de un BUSCAR PACIENTE POR EMAIL exitosamente
+[ 2023 - 06 - 04 16:25:15 ] [ INFO  ] [ PacienteH2DAO:203 ] Se ha iniciado la busqueda de un PACIENTE por EMAIL
+[ 2023 - 06 - 04 16:25:15 ] [ WARN  ] [ PacienteH2DAO:220 ] ADVERTENCIA: Se ha producido un error en la ejecucion de BUSCAR PACIENTE POR EMAIL. Por tanto, se intentará cerrar la conexion con la DB
+[ 2023 - 06 - 04 16:25:15 ] [ INFO  ] [ PacienteH2DAO:227 ] Se ha finalizado la busqueda de un BUSCAR PACIENTE POR EMAIL exitosamente
+[ 2023 - 06 - 05 00:51:30 ] [ INFO  ] [ PacienteH2DAO:203 ] Se ha iniciado la busqueda de un PACIENTE por EMAIL
+[ 2023 - 06 - 05 00:51:30 ] [ WARN  ] [ PacienteH2DAO:220 ] ADVERTENCIA: Se ha producido un error en la ejecucion de BUSCAR PACIENTE POR EMAIL. Por tanto, se intentará cerrar la conexion con la DB
+[ 2023 - 06 - 05 00:51:30 ] [ INFO  ] [ PacienteH2DAO:227 ] Se ha finalizado la busqueda de un BUSCAR PACIENTE POR EMAIL exitosamente
+[ 2023 - 06 - 05 00:51:51 ] [ INFO  ] [ PacienteH2DAO:203 ] Se ha iniciado la busqueda de un PACIENTE por EMAIL
+[ 2023 - 06 - 05 00:51:51 ] [ WARN  ] [ PacienteH2DAO:220 ] ADVERTENCIA: Se ha producido un error en la ejecucion de BUSCAR PACIENTE POR EMAIL. Por tanto, se intentará cerrar la conexion con la DB
+[ 2023 - 06 - 05 00:51:51 ] [ INFO  ] [ PacienteH2DAO:227 ] Se ha finalizado la busqueda de un BUSCAR PACIENTE POR EMAIL exitosamente
+[ 2023 - 06 - 05 00:54:46 ] [ INFO  ] [ PacienteH2DAO:203 ] Se ha iniciado la busqueda de un PACIENTE por EMAIL
+[ 2023 - 06 - 05 00:54:46 ] [ WARN  ] [ PacienteH2DAO:220 ] ADVERTENCIA: Se ha producido un error en la ejecucion de BUSCAR PACIENTE POR EMAIL. Por tanto, se intentará cerrar la conexion con la DB
+[ 2023 - 06 - 05 00:54:46 ] [ INFO  ] [ PacienteH2DAO:227 ] Se ha finalizado la busqueda de un BUSCAR PACIENTE POR EMAIL exitosamente
+[ 2023 - 06 - 05 00:55:02 ] [ INFO  ] [ PacienteH2DAO:203 ] Se ha iniciado la busqueda de un PACIENTE por EMAIL
+[ 2023 - 06 - 05 00:55:02 ] [ WARN  ] [ PacienteH2DAO:220 ] ADVERTENCIA: Se ha producido un error en la ejecucion de BUSCAR PACIENTE POR EMAIL. Por tanto, se intentará cerrar la conexion con la DB
+[ 2023 - 06 - 05 00:55:02 ] [ INFO  ] [ PacienteH2DAO:227 ] Se ha finalizado la busqueda de un BUSCAR PACIENTE POR EMAIL exitosamente
