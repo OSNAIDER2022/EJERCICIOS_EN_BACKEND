@@ -23,7 +23,8 @@ public class Domicilio {
         this.localidad = localidad;
         this.provincia = provincia;
     }
-
+    //para que en futuras peticiones POST se construya el json de respuesta se debe establecer el constructor por defecto:
+    public Domicilio(){ }
     //GETTERS AND SETTERS:
 
     public Integer getId() {

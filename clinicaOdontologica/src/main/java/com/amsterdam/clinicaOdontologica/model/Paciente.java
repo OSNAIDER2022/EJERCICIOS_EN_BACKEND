@@ -32,6 +32,8 @@ public class Paciente {
         this.domicilio = domicilio;
         this.email = email;
     }
+    //para que en futuras peticiones POST se construya el json de respuesta se debe establecer el constructor por defecto:
+    public Paciente(){ }
 
     //GETTERS AND SETTERS:
 

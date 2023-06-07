@@ -27,13 +27,16 @@ public class PacienteH2DAO implements IDao<Paciente> {
         try {
             LOGGER.info("Se ha iniciado el guardado de un PACIENTE");
             connection = DB.getConnection();
+            //relizamos un DomicilioH2DAO para ingresar datos por foreign key
+            DomicilioH2DAO domicilioH2DAO = new DomicilioH2DAO();
+            Domicilio nuevoDomicilio = domicilioH2DAO.guardar(paciente.getDomicilio());
             //se inserta "Statement.RETURN_GENERATED_KEYS" para devolver el id recien generado y de este modo mostrar los datos ingresados:
             PreparedStatement psInsert = connection.prepareStatement(SQL_INSERT, Statement.RETURN_GENERATED_KEYS);
             psInsert.setString(1, paciente.getNombre());
             psInsert.setString(2, paciente.getApellido());
             psInsert.setString(3, paciente.getIdentificacion());
             psInsert.setDate(4, Date.valueOf(paciente.getFechaDeIngreso()));
-            psInsert.setObject(5, paciente.getDomicilio());
+            psInsert.setInt(5, nuevoDomicilio.getId());
             psInsert.setString(6,paciente.getEmail());
             psInsert.execute();
 
@@ -47,14 +50,11 @@ public class PacienteH2DAO implements IDao<Paciente> {
             e.printStackTrace();
         } finally {
             try {
-                LOGGER.warn("ADVERTENCIA: Se ha producido un error en la ejecucion de GUARDAR PACIENTE. Por tanto, se intentará cerrar la conexion con la DB");
                 connection.close();
             } catch (SQLException e2) {
-                LOGGER.error("ALERTA: Se ha generado un error que ha impedido el cierre de la conexion con la DB");
                 e2.printStackTrace();
             }
         }
-        LOGGER.info("Se ha finalizado el guardado de un PACIENTE exitosamente");
 
         return paciente;
     }
@@ -84,14 +84,11 @@ public class PacienteH2DAO implements IDao<Paciente> {
             e.printStackTrace();
         } finally {
             try {
-                LOGGER.warn("ADVERTENCIA: Se ha producido un error en la ejecucion de BUSCAR PACIENTE. Por tanto, se intentará cerrar la conexion con la DB");
                 connection.close();
             } catch (SQLException e2) {
-                LOGGER.error("ALERTA: Se ha generado un error que ha impedido el cierre de la conexion con la DB");
                 e2.printStackTrace();
             }
         }
-        LOGGER.info("Se ha finalizado la busqueda de un PACIENTE exitosamente");
         return paciente;
     }
 
@@ -103,12 +100,15 @@ public class PacienteH2DAO implements IDao<Paciente> {
         try {
             LOGGER.info("Se ha iniciado la actualizacion de un PACIENTE");
             connection = DB.getConnection();
+            //relizamos un DomicilioH2DAO para ingresar datos por foreign key
+            DomicilioH2DAO domicilioH2DAO = new DomicilioH2DAO();
+            domicilioH2DAO.actualizar(paciente.getDomicilio());
             PreparedStatement psUpdate = connection.prepareStatement(SQL_UPDATE);
             psUpdate.setString(1, paciente.getNombre());
             psUpdate.setString(2, paciente.getApellido());
             psUpdate.setString(3, paciente.getIdentificacion());
             psUpdate.setDate(4, Date.valueOf(paciente.getFechaDeIngreso()));
-            psUpdate.setObject(5, paciente.getDomicilio());
+            psUpdate.setObject(5, paciente.getDomicilio().getId());
             psUpdate.setString(6,paciente.getEmail());
             psUpdate.setInt(7, paciente.getId());
             psUpdate.execute();
@@ -117,14 +117,11 @@ public class PacienteH2DAO implements IDao<Paciente> {
             e.printStackTrace();
         } finally {
             try {
-                LOGGER.warn("ADVERTENCIA: Se ha producido un error en la ejecucion de ACTUALIZAR PACIENTE. Por tanto, se intentará cerrar la conexion con la DB");
                 connection.close();
             } catch (SQLException e2) {
-                LOGGER.error("ALERTA: Se ha generado un error que ha impedido el cierre de la conexion con la DB");
                 e2.printStackTrace();
             }
         }
-        LOGGER.info("Se ha finalizado la actualizacion de un PACIENTE exitosamente");
     }
 
     @Override
@@ -134,8 +131,6 @@ public class PacienteH2DAO implements IDao<Paciente> {
         Paciente paciente = null;
 
         try {
-            LOGGER.warn("Se ha iniciado la eliminacion de un PACIENTE");
-
             PreparedStatement psDelete = connection.prepareStatement(SQL_DELETE);
             psDelete.setInt(1, id);
             psDelete.execute();
@@ -144,14 +139,11 @@ public class PacienteH2DAO implements IDao<Paciente> {
             e.printStackTrace();
         } finally {
             try {
-                LOGGER.warn("ADVERTENCIA: Se ha producido un error en la ejecucion de ELIMINAR PACIENTE. Por tanto, se intentará cerrar la conexion con la DB");
                 connection.close();
             } catch (SQLException e2) {
-                LOGGER.error("ALERTA: Se ha generado un error que ha impedido el cierre de la conexion con la DB");
                 e2.printStackTrace();
             }
         }
-        LOGGER.info("Se ha finalizado la eliminacion de un PACIENTE exitosamente");
 }
 
     @Override
@@ -163,7 +155,6 @@ public class PacienteH2DAO implements IDao<Paciente> {
             List<Paciente> pacientes = new ArrayList<>();
 
             try {
-                LOGGER.info("Se ha iniciado la busqueda de todos los PACIENTES");
                 connection = DB.getConnection();
                 PreparedStatement psSearchAll = connection.prepareStatement(SQL_ALLSEARCH);
                 ResultSet rs = psSearchAll.executeQuery();
@@ -180,14 +171,11 @@ public class PacienteH2DAO implements IDao<Paciente> {
                 e.printStackTrace();
             } finally {
                 try {
-                    LOGGER.warn("ADVERTENCIA: Se ha producido un error en la ejecucion de BUSCAR TODOS LOS PACIENTES. Por tanto, se intentará cerrar la conexion con la DB");
                     connection.close();
                 } catch (SQLException e2) {
-                    LOGGER.error("ALERTA: Se ha generado un error que ha impedido el cierre de la conexion con la DB");
                     e2.printStackTrace();
                 }
             }
-            LOGGER.info("Se ha finalizado la busqueda de TODOS LOS PACIENTES exitosamente");
             return pacientes;
     }
 
@@ -207,9 +195,9 @@ public class PacienteH2DAO implements IDao<Paciente> {
             ResultSet rs = psSearchByEmail.executeQuery();
 
             DomicilioH2DAO domicilioH2DAO = new DomicilioH2DAO();
-            domicilio = domicilioH2DAO.buscar(rs.getInt(6));
 
             while (rs.next()) {
+                domicilio = domicilioH2DAO.buscar(rs.getInt(6));
                 paciente = new Paciente(rs.getInt(1), rs.getString(2), rs.getNString(3), rs.getNString(4), rs.getDate(5).toLocalDate(), domicilio, rs.getString(7));
             }
 
