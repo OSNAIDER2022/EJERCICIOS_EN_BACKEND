@@ -67,7 +67,7 @@ public class PacienteH2DAO implements IDao<Paciente> {
         Domicilio domicilio = null;
 
         try {
-            LOGGER.info("Se ha iniciado la busqueda de un PACIENTE");
+              LOGGER.info("Se ha iniciado la busqueda de un PACIENTE");
             connection = DB.getConnection();
             PreparedStatement psSearch = connection.prepareStatement(SQL_SEARCH);
             psSearch.setInt(1, id);
