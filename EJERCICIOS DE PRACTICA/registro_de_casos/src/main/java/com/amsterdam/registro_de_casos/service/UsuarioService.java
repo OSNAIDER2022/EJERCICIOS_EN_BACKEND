@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+
 public class UsuarioService {
     //ESTO ES TEMPORAL:
     private IDao<Usuario> usuarioIDao;

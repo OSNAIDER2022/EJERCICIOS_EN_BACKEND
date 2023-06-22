@@ -1,5 +1,7 @@
 package com.amsterdam.registro_de_casos.model;
 
+import java.time.LocalDate;
+
 public class SoporteTecnico {
     //ATRIBUTOS:
     private Integer id;
@@ -9,10 +11,11 @@ public class SoporteTecnico {
     private String asunto;
     private String descripcion;
     private String observaciones;
+    private LocalDate fecha;
 
     //CONSTRUCTOR
     //CON ID:
-    public SoporteTecnico(Integer id, Usuario usuario, Equipo equipo, Servicio servicio, String asunto, String descripcion, String observaciones) {
+    public SoporteTecnico(Integer id, Usuario usuario, Equipo equipo, Servicio servicio, String asunto, String descripcion, String observaciones, LocalDate fecha) {
         this.id = id;
         this.usuario = usuario;
         this.equipo = equipo;
@@ -20,16 +23,18 @@ public class SoporteTecnico {
         this.asunto = asunto;
         this.descripcion = descripcion;
         this.observaciones = observaciones;
+        this.fecha = fecha;
     }
 
     //SIN ID:
-    public SoporteTecnico(Usuario usuario, Equipo equipo, Servicio servicio, String asunto, String descripcion, String observaciones) {
+    public SoporteTecnico(Usuario usuario, Equipo equipo, Servicio servicio, String asunto, String descripcion, String observaciones, LocalDate fecha) {
         this.usuario = usuario;
         this.equipo = equipo;
         this.servicio = servicio;
         this.asunto = asunto;
         this.descripcion = descripcion;
         this.observaciones = observaciones;
+        this.fecha = fecha;
     }
 
     //GETTERS AND SETTERS
@@ -87,5 +92,12 @@ public class SoporteTecnico {
 
     public void setObservaciones(String observaciones) {
         this.observaciones = observaciones;
+    }
+
+    public LocalDate getFecha() {
+        return fecha;
+    }
+    public void setFecha(LocalDate fecha) {
+        this.fecha = fecha;
     }
 }
