@@ -2,7 +2,6 @@ package com.amsterdam.reporteDeCasosII.service;
 
 import com.amsterdam.reporteDeCasosII.dao.IDao;
 import com.amsterdam.reporteDeCasosII.model.SoporteTecnico;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 

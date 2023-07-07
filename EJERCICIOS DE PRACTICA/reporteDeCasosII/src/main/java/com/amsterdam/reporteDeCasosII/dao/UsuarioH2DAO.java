@@ -10,10 +10,10 @@ import java.util.List;
 public class UsuarioH2DAO implements IDao<Usuario>{
     //ESTABLECEMOS CONSTANTES:
     private static final String SQL_ALLSEARCH = "SELECT * FROM usuarios;";
-    private static final String SQL_DELETE = "DELETE FROM WHERE ID = ?;";
-    private static final String SQL_UPDATE = "UPDATE usuarios SET nombreCompleto = ?, SET numeroCelular = ?, SET correo = ? WHERE ID = ?;";
-    private static final String SQL_SEARCH = "SELECT * FROM usuarios WHERE ID = ?;";
-    private static final String SQL_INSERT = "INSERT INTO usuarios (nombreCompleto, numeroCelular, correo) VALUES(?,?,?);";
+    private static final String SQL_DELETE = "DELETE FROM usuarios WHERE id = ?;";
+    private static final String SQL_UPDATE = "UPDATE usuarios SET nombreCompleto = ?, SET numeroCelular = ?, SET correo = ? WHERE id = ?;";
+    private static final String SQL_SEARCH = "SELECT * FROM usuarios WHERE id = ?;";
+    private static final String SQL_INSERT = "INSERT INTO usuarios (nombreCompleto, numeroCelular, correo) VALUES(?,?,?), IDENTITY";
     private static final Logger LOGGER = Logger.getLogger(UsuarioH2DAO.class);
 
     //SOBREESCRITURA DE METODOS:
@@ -28,7 +28,7 @@ public class UsuarioH2DAO implements IDao<Usuario>{
 
             ResultSet rs = psSearchAll.executeQuery();
             while(rs.next()){
-                usuario = new Usuario(rs.getInt(1),rs.getNString(2), rs.getNString(3),rs.getNString(4));
+                usuario = new Usuario(rs.getInt(1),rs.getString(2), rs.getString(3),rs.getString(4));
                 usuarios.add(usuario);
             }
 
@@ -120,8 +120,9 @@ public class UsuarioH2DAO implements IDao<Usuario>{
     @Override
     public Usuario guardar(Usuario usuario) {
         Connection connection = null;
+
         try{
-            LOGGER.info("Se ha iniciado el guardado del USUARIO con ID: " + usuario.getId());
+            LOGGER.info("Se ha iniciado el guardado del USUARIO" + usuario.getNombreCompleto());
             connection = Database.getConnection();
 
             PreparedStatement psInsert = connection.prepareStatement(SQL_INSERT, Statement.RETURN_GENERATED_KEYS);
@@ -130,9 +131,10 @@ public class UsuarioH2DAO implements IDao<Usuario>{
             psInsert.setString(3,usuario.getCorreo());
             psInsert.execute();
 
-            ResultSet rs =psInsert.getGeneratedKeys();
-            while (rs.next()){
+            ResultSet rs = psInsert.getGeneratedKeys();
+            if (rs.next()){
                 usuario.setId(rs.getInt(1));
+                LOGGER.info("Se ha iniciado el guardado del USUARIO con ID: " + usuario.getId());
             }
 
         }catch (Exception e1){

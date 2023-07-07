@@ -135,3 +135,11 @@
 [ 2023 - 06 - 07 00:06:37 ] [ INFO  ] [ PacienteH2DAO:60 ] Se ha finalizado el guardado de un PACIENTE exitosamente
 [ 2023 - 06 - 07 00:15:34 ] [ INFO  ] [ PacienteH2DAO:70 ] Se ha iniciado la busqueda de un PACIENTE
 [ 2023 - 06 - 07 00:15:45 ] [ INFO  ] [ PacienteH2DAO:70 ] Se ha iniciado la busqueda de un PACIENTE
+[ 2023 - 07 - 05 01:18:24 ] [ INFO  ] [ PacienteH2DAO:28 ] Se ha iniciado el guardado de un PACIENTE
+[ 2023 - 07 - 05 01:18:24 ] [ INFO  ] [ DomicilioH2DAO:24 ] Se ha iniciado el guardado de un DOMICILIO
+[ 2023 - 07 - 05 01:18:24 ] [ WARN  ] [ DomicilioH2DAO:44 ] ADVERTENCIA: Se ha producido un error en la ejecucion de GUARDAR DOMICILIO. Por tanto, se intentará cerrar la conexion con la DB
+[ 2023 - 07 - 05 01:18:24 ] [ INFO  ] [ DomicilioH2DAO:51 ] Se ha finalizado el guardado de un DOMICILIO exitosamente
+[ 2023 - 07 - 05 01:18:51 ] [ INFO  ] [ PacienteH2DAO:28 ] Se ha iniciado el guardado de un PACIENTE
+[ 2023 - 07 - 05 01:18:51 ] [ INFO  ] [ DomicilioH2DAO:24 ] Se ha iniciado el guardado de un DOMICILIO
+[ 2023 - 07 - 05 01:18:51 ] [ WARN  ] [ DomicilioH2DAO:44 ] ADVERTENCIA: Se ha producido un error en la ejecucion de GUARDAR DOMICILIO. Por tanto, se intentará cerrar la conexion con la DB
+[ 2023 - 07 - 05 01:18:51 ] [ INFO  ] [ DomicilioH2DAO:51 ] Se ha finalizado el guardado de un DOMICILIO exitosamente

@@ -20,6 +20,10 @@ public class Equipo {
         this.serial = serial;
     }
 
+    //VACIO MARCADO POR DEFAULT:
+    public Equipo() {
+    }
+
     //GETTERS AND SETTERS:
     public Integer getId() {
         return id;
