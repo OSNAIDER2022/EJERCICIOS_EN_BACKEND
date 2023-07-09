@@ -9,13 +9,14 @@ import java.util.List;
 
 @Service
 public class UsuarioService {
-    //ESTO ES TEMPORAL:
     private IDao<Usuario> usuarioIDao;
 
+    //ESTO ES TEMPORAL:
     //CONSTRUCTOR:
     public UsuarioService() {
         usuarioIDao = new UsuarioH2DAO();
     }
+
 
     //METODOS:
     public Usuario guardarUsuario(Usuario usuario) {
@@ -26,15 +27,10 @@ public class UsuarioService {
         return usuarioIDao.buscar(id);
     }
 
-    public Usuario actualizarUsuario(Usuario usuario) {
-        usuarioIDao.actualizar(usuario);
-        return usuario;
+    public void actualizarUsuario(Usuario usuario) { usuarioIDao.actualizar(usuario);
     }
 
-    public Usuario eliminarUsuario(Integer id) {
-        usuarioIDao.eliminar(id);
-        return null;
-    }
+    public void eliminarUsuario(Integer id) { usuarioIDao.eliminar(id); }
     public List<Usuario> buscarTodosLosUsuarios(){
         return usuarioIDao.buscarTodos();
     }

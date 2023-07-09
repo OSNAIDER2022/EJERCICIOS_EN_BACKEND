@@ -7,12 +7,54 @@ import java.sql.Statement;
 
 public class Database {
     //ATRIBUTOS:
-    private static final String SQL_DROP_CREATE = "CREATE TABLE IF NOT EXISTS usuarios, equipos, servicios, soportesTecnicos;"+
-            "CREATE TABLE usuarios (id INT AUTO_INCREMENT PRIMARY KEY, nombreCompleto VARCHAR(100) NOT NULL, numeroCelular VARCHAR(100) NOT NULL, correo VARCHAR(100) NOT NULL);"+
-            "CREATE TABLE equipos (id INT AUTOINCREMENT PRIMARY KEY, modelo VARCHAR(100) NOT NULL, serial VARCHAR(100) NOT NULL);"+
-            "CREATE TABLE servicios (id INT AUTO_INCREMENT PRIMARY KEY, nombreDeServicio VARCHAR(100) NOT NULL, descripcion MEDIUMTEXT NOT NULL, precio DOUBLE NOT NULL);"+
-            "CREATE TABLE soportesTecnicos (id INT AUTO_INCREMENT PRIMARY KEY, usuario_id INT NOT NULL, equipo_id INT NOT NULL, servicio_id INT NOT NULL, asunto VARCHAR(100) NOT NULL, descripcion LONGTEXT NOT NULL, observaciones MEDIUMTEXT NOT NULL, fecha DATE NOT NULL);";
+    private static final String SQL_CREATE_TABLE_USUARIOS ="DROP TABLE IF EXIST usuarios; " +
+            "CREATE TABLE usuarios(id INT AUTO_INCREMENT PRIMARY KEY, nombreCompleto VARCHAR(100) NOT NULL, numeroCelular VARCHAR(100)NOT NULL, " +
+            "correo  VARCHAR(100) NOT NULL);";
 
+/*
+    private static final String SQL_CREATE_TABLE_EQUIPOS = "CREATE TABLE IF NOT EXISTS `Database`.`equipos` (\n" +
+            "  `id` INT NOT NULL AUTO_INCREMENT,\n" +
+            "  `modelo` VARCHAR(100) NOT NULL,\n" +
+            "  `serial` VARCHAR(100) NOT NULL,\n" +
+            "  PRIMARY KEY (`id`))\n" +
+            "ENGINE = InnoDB;";
+    private static final String SQL_CREATE_TABLE_SERVICIOS = "CREATE TABLE IF NOT EXISTS `Databases`.`servicios` (\n" +
+            "  `id` INT NOT NULL AUTO_INCREMENT,\n" +
+            "  `nombreDeServicio` VARCHAR(100) NOT NULL,\n" +
+            "  `descripcion` MEDIUMTEXT NOT NULL,\n" +
+            "  `precio` VARCHAR(45) NOT NULL,\n" +
+            "  PRIMARY KEY (`id`))\n" +
+            "ENGINE = InnoDB;";
+    private static final String SQL_CREATE_TABLE_SOPORTES_TECNICOS = "CREATE TABLE IF NOT EXISTS `Databases`.`soportesTecnicos` (\n" +
+            "  `id` INT NOT NULL AUTO_INCREMENT,\n" +
+            "  `usuarios_id` INT NOT NULL,\n" +
+            "  `equipos_id` INT NOT NULL,\n" +
+            "  `servicios_id` INT NOT NULL,\n" +
+            "  `asunto` VARCHAR(100) NOT NULL,\n" +
+            "  `descripcion` LONGTEXT NOT NULL,\n" +
+            "  `observaciones` MEDIUMTEXT NOT NULL,\n" +
+            "  `fecha` DATE NOT NULL,\n" +
+            "  PRIMARY KEY (`id`),\n" +
+            "  INDEX `fk_soportesTecnicos_usuarios_idx` (`usuarios_id` ASC) VISIBLE,\n" +
+            "  INDEX `fk_soportesTecnicos_equipos1_idx` (`equipos_id` ASC) VISIBLE,\n" +
+            "  INDEX `fk_soportesTecnicos_servicios1_idx` (`servicios_id` ASC) VISIBLE,\n" +
+            "  CONSTRAINT `fk_soportesTecnicos_usuarios`\n" +
+            "    FOREIGN KEY (`usuarios_id`)\n" +
+            "    REFERENCES `mydb`.`usuarios` (`id`)\n" +
+            "    ON DELETE NO ACTION\n" +
+            "    ON UPDATE NO ACTION,\n" +
+            "  CONSTRAINT `fk_soportesTecnicos_equipos1`\n" +
+            "    FOREIGN KEY (`equipos_id`)\n" +
+            "    REFERENCES `mydb`.`equipos` (`id`)\n" +
+            "    ON DELETE NO ACTION\n" +
+            "    ON UPDATE NO ACTION,\n" +
+            "  CONSTRAINT `fk_soportesTecnicos_servicios1`\n" +
+            "    FOREIGN KEY (`servicios_id`)\n" +
+            "    REFERENCES `mydb`.`servicios` (`id`)\n" +
+            "    ON DELETE NO ACTION\n" +
+            "    ON UPDATE NO ACTION)\n" +
+            "ENGINE = InnoDB;";
+*/
     //METODOS
 
     public static Connection getConnection() throws Exception{
@@ -24,7 +66,10 @@ public class Database {
         try{
             connection = getConnection();
             Statement statement = connection.createStatement();
-            statement.execute(SQL_DROP_CREATE);
+            statement.execute(SQL_CREATE_TABLE_USUARIOS);
+//            statement.execute(SQL_CREATE_TABLE_EQUIPOS);
+//            statement.execute(SQL_CREATE_TABLE_SERVICIOS);
+//            statement.execute(SQL_CREATE_TABLE_SOPORTES_TECNICOS);
 
         }catch (Exception e1){
             e1.printStackTrace();
