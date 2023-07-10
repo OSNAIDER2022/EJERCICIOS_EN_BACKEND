@@ -9,11 +9,11 @@ import java.util.List;
 
 public class UsuarioH2DAO implements IDao<Usuario>{
     //ESTABLECEMOS CONSTANTES:
-    private static final String SQL_ALLSEARCH = "SELECT * FROM usuarios;";
-    private static final String SQL_DELETE = "DELETE FROM usuarios WHERE id = ?;";
-    private static final String SQL_UPDATE = "UPDATE usuarios SET nombreCompleto = ?, SET numeroCelular = ?, SET correo = ? WHERE id = ?;";
-    private static final String SQL_SEARCH = "SELECT * FROM usuarios WHERE id = ?;";
-    private static final String SQL_INSERT = "INSERT INTO usuarios (nombreCompleto, numeroCelular, correo) VALUES (?,?,?)";
+    private static final String SQL_ALLSEARCH = "SELECT * FROM USUARIOS;";
+    private static final String SQL_DELETE = "DELETE FROM USUARIOS WHERE ID = ?;";
+    private static final String SQL_UPDATE = "UPDATE USUARIOS SET NOMBRE_COMPLETO = ?, NUMERO_CELULAR = ?, CORREO = ? WHERE ID = ?;";
+    private static final String SQL_SEARCH = "SELECT * FROM USUARIOS WHERE ID = ?;";
+    private static final String SQL_INSERT = "INSERT INTO USUARIOS (NOMBRE_COMPLETO, NUMERO_CELULAR, CORREO) VALUES (?,?,?)";
     private static final Logger LOGGER = Logger.getLogger(UsuarioH2DAO.class);
 
     //SOBREESCRITURA DE METODOS:
@@ -24,13 +24,16 @@ public class UsuarioH2DAO implements IDao<Usuario>{
         List<Usuario> usuarios = new ArrayList<>();
 
         try{
+            LOGGER.info("Se ha iniciado la busqueda de todos los USUARIOS de la Database");
             connection = Database.getConnection();
             PreparedStatement psSearchAll = connection.prepareStatement(SQL_ALLSEARCH);
             ResultSet rs = psSearchAll.executeQuery();
             while(rs.next()){
                 usuario = new Usuario(rs.getInt(1),rs.getString(2), rs.getString(3),rs.getString(4));
                 usuarios.add(usuario);
+                LOGGER.info("SE ha de mostrar el USUARIO:" + usuario.getNombreCompleto());
             }
+            LOGGER.info("Se ha finalizado la busqueda de todos los USUARIOS de la Database");
 
         }catch (Exception e1){
             e1.printStackTrace();
@@ -49,9 +52,10 @@ public class UsuarioH2DAO implements IDao<Usuario>{
         Connection connection = null;
         Usuario usuario = null;
         try {
+            LOGGER.info("Se ha comenzado la eliminacion del usuario con el ID: " + id);
             connection=Database.getConnection();
             PreparedStatement psDelete = connection.prepareStatement(SQL_DELETE);
-            psDelete.setInt(1, usuario.getId());
+            psDelete.setInt(1, id);
             psDelete.execute();
 
         }catch (Exception e1){
@@ -70,6 +74,7 @@ public class UsuarioH2DAO implements IDao<Usuario>{
         Connection connection = null;
 
         try {
+            LOGGER.info("Se ha comenzado la actualizacion de datos para el usuario con el ID: " + usuario.getId());
             connection = Database.getConnection();
             PreparedStatement psUpdate = connection.prepareStatement(SQL_UPDATE);
             psUpdate.setString(1,usuario.getNombreCompleto());
@@ -95,7 +100,7 @@ public class UsuarioH2DAO implements IDao<Usuario>{
         Usuario usuario = null;
 
         try{
-            LOGGER.info("Se ha comenzado la busqueda de un usuario" + usuario.getId());
+            LOGGER.info("Se ha comenzado la busqueda de un usuario" + id);
             connection = Database.getConnection();
             PreparedStatement psSearch = connection.prepareStatement(SQL_SEARCH);
             psSearch.setInt(1,id);
@@ -103,6 +108,7 @@ public class UsuarioH2DAO implements IDao<Usuario>{
 
             while (rs.next()){
                 usuario = new Usuario(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4));
+                LOGGER.info("Se ha encontrado la busqueda para el usuario con el ID: " + id + " bajo el nombre de: " + usuario.getNombreCompleto());
             }
 
         }catch (Exception e1){
@@ -132,7 +138,7 @@ public class UsuarioH2DAO implements IDao<Usuario>{
             ResultSet rs = psInsert.getGeneratedKeys();
             while (rs.next()){
                 usuario.setId(rs.getInt(1));
-                LOGGER.info("Se ha iniciado el guardado del USUARIO con ID: " + usuario.getId());
+                LOGGER.info("Se ha generado el ID: " + usuario.getId() + " para el USUARIO: " + usuario.getNombreCompleto());
             }
 
         }catch (Exception e1){

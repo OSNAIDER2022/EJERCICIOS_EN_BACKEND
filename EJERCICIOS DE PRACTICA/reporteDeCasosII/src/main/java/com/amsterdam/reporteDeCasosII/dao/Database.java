@@ -7,24 +7,11 @@ import java.sql.Statement;
 
 public class Database {
     //ATRIBUTOS:
-    private static final String SQL_CREATE_TABLE_USUARIOS ="DROP TABLE IF EXIST usuarios; " +
-            "CREATE TABLE usuarios(id INT AUTO_INCREMENT PRIMARY KEY, nombreCompleto VARCHAR(100) NOT NULL, numeroCelular VARCHAR(100)NOT NULL, " +
-            "correo  VARCHAR(100) NOT NULL);";
-
-/*
-    private static final String SQL_CREATE_TABLE_EQUIPOS = "CREATE TABLE IF NOT EXISTS `Database`.`equipos` (\n" +
-            "  `id` INT NOT NULL AUTO_INCREMENT,\n" +
-            "  `modelo` VARCHAR(100) NOT NULL,\n" +
-            "  `serial` VARCHAR(100) NOT NULL,\n" +
-            "  PRIMARY KEY (`id`))\n" +
-            "ENGINE = InnoDB;";
-    private static final String SQL_CREATE_TABLE_SERVICIOS = "CREATE TABLE IF NOT EXISTS `Databases`.`servicios` (\n" +
-            "  `id` INT NOT NULL AUTO_INCREMENT,\n" +
-            "  `nombreDeServicio` VARCHAR(100) NOT NULL,\n" +
-            "  `descripcion` MEDIUMTEXT NOT NULL,\n" +
-            "  `precio` VARCHAR(45) NOT NULL,\n" +
-            "  PRIMARY KEY (`id`))\n" +
-            "ENGINE = InnoDB;";
+    private static final String SQL_VERIFY_TABLE_EXISTS = "DROP TABLE IF EXISTS USUARIOS, EQUIPOS, SERVICIOS, SOPORTES_TECNICOS;";
+    private static final String SQL_CREATE_TABLE_USUARIOS ="CREATE TABLE IF NOT EXISTS USUARIOS (ID INT NOT NULL AUTO_INCREMENT, NOMBRE_COMPLETO VARCHAR(100) NOT NULL, NUMERO_CELULAR VARCHAR(100) NOT NULL, CORREO VARCHAR(100) NOT NULL, PRIMARY KEY (ID));";
+    private static final String SQL_CREATE_TABLE_EQUIPOS ="CREATE TABLE IF NOT EXISTS EQUIPOS (ID INT NOT NULL AUTO_INCREMENT, MODELO VARCHAR(100) NOT NULL, SERIAL VARCHAR(100) NOT NULL, PRIMARY KEY (ID));";
+    private static final String SQL_CREATE_TABLE_SERVICIOS ="CREATE TABLE IF NOT EXISTS SERVICIOS (ID INT NOT NULL AUTO_INCREMENT, NOMBRE_DE_SERVICIO VARCHAR(100) NOT NULL, DESCRIPCION MEDIUMTEXT NOT NULL, PRECIO DOUBLE NOT NULL, PRIMARY KEY (ID));";
+    /*
     private static final String SQL_CREATE_TABLE_SOPORTES_TECNICOS = "CREATE TABLE IF NOT EXISTS `Databases`.`soportesTecnicos` (\n" +
             "  `id` INT NOT NULL AUTO_INCREMENT,\n" +
             "  `usuarios_id` INT NOT NULL,\n" +
@@ -53,13 +40,17 @@ public class Database {
             "    REFERENCES `mydb`.`servicios` (`id`)\n" +
             "    ON DELETE NO ACTION\n" +
             "    ON UPDATE NO ACTION)\n" +
-            "ENGINE = InnoDB;";
+            "ENGINE = InnoDB;"+
+            "\n" +
+            "SET SQL_MODE=@OLD_SQL_MODE;\n" +
+            "SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;\n" +
+            "SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;\n";
 */
     //METODOS
 
     public static Connection getConnection() throws Exception{
         Class.forName("org.h2.Driver");
-        return DriverManager.getConnection("jdbc:h2:~/github/EJERCICIOS_EN_BACKEND/EJERCICIOS DE PRACTICA/reporteDeCasosII/src/main/resources/DB/Database","root","toor");
+        return DriverManager.getConnection("jdbc:h2:~/Música/reporteDeCasosII/src/main/resources/DB/Database","root","toor");
     }
     public static void crearTablas(){
         Connection connection = null;
