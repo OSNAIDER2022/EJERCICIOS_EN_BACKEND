@@ -489,3 +489,63 @@
 [ 2023 - 07 - 10 00:20:35 ] [ INFO  ] [ UsuarioH2DAO:103 ] Se ha comenzado la busqueda de un usuario12
 [ 2023 - 07 - 10 00:20:35 ] [ INFO  ] [ UsuarioH2DAO:111 ] Se ha encontrado la busqueda para el usuario con el ID: 12 bajo el nombre de: Santiago Avendaño
 [ 2023 - 07 - 10 00:22:28 ] [ INFO  ] [ UsuarioH2DAO:103 ] Se ha comenzado la busqueda de un usuario23
+[ 2023 - 07 - 10 22:12:49 ] [ INFO  ] [ EquipoH2DAO:122 ] Se ha comenzado el proceso de guardado de datos para un equipo.
+[ 2023 - 07 - 10 22:17:14 ] [ INFO  ] [ EquipoH2DAO:122 ] Se ha comenzado el proceso de guardado de datos para un equipo.
+[ 2023 - 07 - 10 22:18:13 ] [ INFO  ] [ EquipoH2DAO:122 ] Se ha comenzado el proceso de guardado de datos para un equipo.
+[ 2023 - 07 - 10 22:20:47 ] [ INFO  ] [ EquipoH2DAO:122 ] Se ha comenzado el proceso de guardado de datos para un equipo.
+[ 2023 - 07 - 10 22:20:47 ] [ INFO  ] [ EquipoH2DAO:132 ] Se ha generado el ID: 1 para el equipo a ingresar.
+[ 2023 - 07 - 10 22:20:51 ] [ INFO  ] [ EquipoH2DAO:122 ] Se ha comenzado el proceso de guardado de datos para un equipo.
+[ 2023 - 07 - 10 22:20:51 ] [ INFO  ] [ EquipoH2DAO:132 ] Se ha generado el ID: 2 para el equipo a ingresar.
+[ 2023 - 07 - 10 22:21:23 ] [ INFO  ] [ EquipoH2DAO:122 ] Se ha comenzado el proceso de guardado de datos para un equipo.
+[ 2023 - 07 - 10 22:21:23 ] [ INFO  ] [ EquipoH2DAO:132 ] Se ha generado el ID: 3 para el equipo a ingresar.
+[ 2023 - 07 - 10 22:30:59 ] [ INFO  ] [ EquipoH2DAO:27 ] Se ha iniciado la busqueda de todos los EQUIPOS de la Database
+[ 2023 - 07 - 10 22:30:59 ] [ INFO  ] [ EquipoH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:66DG3H5Y4U    
+[ 2023 - 07 - 10 22:30:59 ] [ INFO  ] [ EquipoH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:66DG3H5Y4U    
+[ 2023 - 07 - 10 22:30:59 ] [ INFO  ] [ EquipoH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:0979KO
+[ 2023 - 07 - 10 22:30:59 ] [ INFO  ] [ EquipoH2DAO:37 ] Se ha finalizado la busqueda de todos los EQUIPOS de la Database
+[ 2023 - 07 - 10 22:30:59 ] [ INFO  ] [ EquipoH2DAO:27 ] Se ha iniciado la busqueda de todos los EQUIPOS de la Database
+[ 2023 - 07 - 10 22:30:59 ] [ INFO  ] [ EquipoH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:66DG3H5Y4U    
+[ 2023 - 07 - 10 22:30:59 ] [ INFO  ] [ EquipoH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:66DG3H5Y4U    
+[ 2023 - 07 - 10 22:30:59 ] [ INFO  ] [ EquipoH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:0979KO
+[ 2023 - 07 - 10 22:30:59 ] [ INFO  ] [ EquipoH2DAO:37 ] Se ha finalizado la busqueda de todos los EQUIPOS de la Database
+[ 2023 - 07 - 10 22:45:48 ] [ INFO  ] [ EquipoH2DAO:99 ] Se ha comenzado la busqueda de un EQUIPO con ID:2
+[ 2023 - 07 - 10 22:45:48 ] [ INFO  ] [ EquipoH2DAO:107 ] Se ha encontrado la busqueda para el EQUIPO con el ID: 2 bajo el serial: 66DG3H5Y4U    
+[ 2023 - 07 - 10 22:45:48 ] [ INFO  ] [ EquipoH2DAO:99 ] Se ha comenzado la busqueda de un EQUIPO con ID:2
+[ 2023 - 07 - 10 22:45:48 ] [ INFO  ] [ EquipoH2DAO:107 ] Se ha encontrado la busqueda para el EQUIPO con el ID: 2 bajo el serial: 66DG3H5Y4U    
+[ 2023 - 07 - 10 22:47:13 ] [ INFO  ] [ EquipoH2DAO:99 ] Se ha comenzado la busqueda de un EQUIPO con ID:1
+[ 2023 - 07 - 10 22:47:13 ] [ INFO  ] [ EquipoH2DAO:107 ] Se ha encontrado la busqueda para el EQUIPO con el ID: 1 bajo el serial: 66DG3H5Y4U    
+[ 2023 - 07 - 10 22:47:13 ] [ INFO  ] [ EquipoH2DAO:99 ] Se ha comenzado la busqueda de un EQUIPO con ID:1
+[ 2023 - 07 - 10 22:47:13 ] [ INFO  ] [ EquipoH2DAO:107 ] Se ha encontrado la busqueda para el EQUIPO con el ID: 1 bajo el serial: 66DG3H5Y4U    
+[ 2023 - 07 - 10 23:11:41 ] [ INFO  ] [ EquipoH2DAO:99 ] Se ha comenzado la busqueda de un EQUIPO con ID:2
+[ 2023 - 07 - 10 23:11:41 ] [ INFO  ] [ EquipoH2DAO:107 ] Se ha encontrado la busqueda para el EQUIPO con el ID: 2 bajo el serial: 66DG3H5Y4U    
+[ 2023 - 07 - 10 23:11:50 ] [ INFO  ] [ EquipoH2DAO:99 ] Se ha comenzado la busqueda de un EQUIPO con ID:1
+[ 2023 - 07 - 10 23:11:50 ] [ INFO  ] [ EquipoH2DAO:107 ] Se ha encontrado la busqueda para el EQUIPO con el ID: 1 bajo el serial: 66DG3H5Y4U    
+[ 2023 - 07 - 10 23:12:30 ] [ INFO  ] [ EquipoH2DAO:127 ] Se ha comenzado el proceso de guardado de datos para un equipo.
+[ 2023 - 07 - 10 23:12:30 ] [ INFO  ] [ EquipoH2DAO:137 ] Se ha generado el ID: 4 para el equipo a ingresar.
+[ 2023 - 07 - 10 23:12:32 ] [ INFO  ] [ EquipoH2DAO:127 ] Se ha comenzado el proceso de guardado de datos para un equipo.
+[ 2023 - 07 - 10 23:12:32 ] [ INFO  ] [ EquipoH2DAO:137 ] Se ha generado el ID: 5 para el equipo a ingresar.
+[ 2023 - 07 - 10 23:12:34 ] [ INFO  ] [ EquipoH2DAO:127 ] Se ha comenzado el proceso de guardado de datos para un equipo.
+[ 2023 - 07 - 10 23:12:34 ] [ INFO  ] [ EquipoH2DAO:137 ] Se ha generado el ID: 6 para el equipo a ingresar.
+[ 2023 - 07 - 10 23:27:08 ] [ INFO  ] [ EquipoH2DAO:99 ] Se ha comenzado la busqueda de un EQUIPO con ID:2
+[ 2023 - 07 - 10 23:27:08 ] [ INFO  ] [ EquipoH2DAO:107 ] Se ha encontrado la busqueda para el EQUIPO con el ID: 2 bajo el serial: 66DG3H5Y4U    
+[ 2023 - 07 - 10 23:27:29 ] [ INFO  ] [ EquipoH2DAO:99 ] Se ha comenzado la busqueda de un EQUIPO con ID:2
+[ 2023 - 07 - 10 23:27:29 ] [ INFO  ] [ EquipoH2DAO:107 ] Se ha encontrado la busqueda para el EQUIPO con el ID: 2 bajo el serial: 66DG3H5Y4U    
+[ 2023 - 07 - 10 23:27:29 ] [ INFO  ] [ EquipoH2DAO:99 ] Se ha comenzado la busqueda de un EQUIPO con ID:2
+[ 2023 - 07 - 10 23:27:29 ] [ INFO  ] [ EquipoH2DAO:107 ] Se ha encontrado la busqueda para el EQUIPO con el ID: 2 bajo el serial: 66DG3H5Y4U    
+[ 2023 - 07 - 10 23:28:28 ] [ INFO  ] [ EquipoH2DAO:99 ] Se ha comenzado la busqueda de un EQUIPO con ID:2
+[ 2023 - 07 - 10 23:28:28 ] [ INFO  ] [ EquipoH2DAO:107 ] Se ha encontrado la busqueda para el EQUIPO con el ID: 2 bajo el serial: 66DG3H5Y4U    
+[ 2023 - 07 - 10 23:28:41 ] [ INFO  ] [ EquipoH2DAO:99 ] Se ha comenzado la busqueda de un EQUIPO con ID:2
+[ 2023 - 07 - 10 23:28:41 ] [ INFO  ] [ EquipoH2DAO:107 ] Se ha encontrado la busqueda para el EQUIPO con el ID: 2 bajo el serial: 876DHNDN
+[ 2023 - 07 - 10 23:28:41 ] [ INFO  ] [ EquipoH2DAO:99 ] Se ha comenzado la busqueda de un EQUIPO con ID:2
+[ 2023 - 07 - 10 23:28:41 ] [ INFO  ] [ EquipoH2DAO:107 ] Se ha encontrado la busqueda para el EQUIPO con el ID: 2 bajo el serial: 876DHNDN
+[ 2023 - 07 - 10 23:32:29 ] [ INFO  ] [ EquipoH2DAO:99 ] Se ha comenzado la busqueda de un EQUIPO con ID:2
+[ 2023 - 07 - 10 23:32:29 ] [ INFO  ] [ EquipoH2DAO:107 ] Se ha encontrado la busqueda para el EQUIPO con el ID: 2 bajo el serial: 876DHNDN
+[ 2023 - 07 - 10 23:32:42 ] [ INFO  ] [ EquipoH2DAO:99 ] Se ha comenzado la busqueda de un EQUIPO con ID:2
+[ 2023 - 07 - 10 23:32:42 ] [ INFO  ] [ EquipoH2DAO:107 ] Se ha encontrado la busqueda para el EQUIPO con el ID: 2 bajo el serial: 443536GG
+[ 2023 - 07 - 10 23:32:42 ] [ INFO  ] [ EquipoH2DAO:99 ] Se ha comenzado la busqueda de un EQUIPO con ID:2
+[ 2023 - 07 - 10 23:32:42 ] [ INFO  ] [ EquipoH2DAO:107 ] Se ha encontrado la busqueda para el EQUIPO con el ID: 2 bajo el serial: 443536GG
+[ 2023 - 07 - 10 23:39:33 ] [ INFO  ] [ EquipoH2DAO:99 ] Se ha comenzado la busqueda de un EQUIPO con ID:5
+[ 2023 - 07 - 10 23:39:33 ] [ INFO  ] [ EquipoH2DAO:107 ] Se ha encontrado la busqueda para el EQUIPO con el ID: 5 bajo el serial: 0979KO
+[ 2023 - 07 - 10 23:40:04 ] [ INFO  ] [ UsuarioH2DAO:103 ] Se ha comenzado la busqueda de un usuario13
+[ 2023 - 07 - 10 23:40:04 ] [ INFO  ] [ UsuarioH2DAO:111 ] Se ha encontrado la busqueda para el usuario con el ID: 13 bajo el nombre de: Raul Gomez Heredia Peña
+[ 2023 - 07 - 10 23:40:04 ] [ INFO  ] [ UsuarioH2DAO:77 ] Se ha comenzado la actualizacion de datos para el usuario con el ID: 13

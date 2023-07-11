@@ -32,7 +32,7 @@ public class UsuarioController {
             return ResponseEntity.ok("Se ha logrado ingresar los datos del USUARIO: " + usuario.getNombreCompleto()+" generando el ID: " + usuario.getId());
         }else{
             return ResponseEntity.badRequest().body("Ha ocurrido un error al momento de guardar la informacion. Al parecer el usuario ya existe en la base de datos.");
-        } //==> esto está OK
+        }
     }
 
     @GetMapping
@@ -41,17 +41,17 @@ public class UsuarioController {
             return ResponseEntity.ok(usuarioService.buscarTodosLosUsuarios());
         }else {
             return ResponseEntity.badRequest().build();
-        }//==> esto está OK
+        }
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<String> buscarUsuarioPorId(@PathVariable Integer id){
+    @GetMapping("{id}")
+    public ResponseEntity<Usuario> buscarUsuarioPorId(@PathVariable Integer id){
         Usuario usuarioIdBuscado = usuarioService.buscarUsuario(id);
         if(usuarioIdBuscado != null){
-            return ResponseEntity.ok().body("El usuario con el ID: "+ id +",\n corresponde al nombre de: " + usuarioIdBuscado.getNombreCompleto() + ",\n numero de celular: " + usuarioIdBuscado.getNumeroCelular() + ",\n y correo electronico: " + usuarioIdBuscado.getCorreo());
+            return ResponseEntity.ok().body(usuarioService.buscarUsuario(id));
         }else{
-            return ResponseEntity.badRequest().body("No se han logrado encontrar resultados para la busqueda con el ID: " + id);
-        }//==> esto está OK
+            return ResponseEntity.badRequest().build();
+        }
     }
 
     @DeleteMapping("{id}")
@@ -62,7 +62,7 @@ public class UsuarioController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Se eliminó los datos del usuario de la base de datos, con el ID:" + id);
         }else{
             return ResponseEntity.badRequest().body("Ha ocurrido un error al momento de intentar eliminar la informacion con el ID: "+ id +". Por favor, chequea y vuelve a intentarlo.");
-        }//==> esto está OK
+        }
     }
 
     @PutMapping()
@@ -70,9 +70,9 @@ public class UsuarioController {
         Usuario usuarioIdBuscado = usuarioService.buscarUsuario(usuario.getId());
         if (usuarioIdBuscado != null){
             usuarioService.actualizarUsuario(usuario);
-            return ResponseEntity.ok("Se ha modificado el usuario de forma correcta");
+            return ResponseEntity.ok("Se ha modificado el usuario con el ID: "+ usuario.getId() +" de forma correcta,con los siguientes datos:\n NOMBRE COMPLETO: "+ usuario.getNombreCompleto()+"\n CELULAR: "+ usuario.getNumeroCelular()+"\n CORREO: "+ usuario.getCorreo());
         }else{
             return ResponseEntity.badRequest().body("No se ha encontrado el usuario que se quiere modificar.");
         }
-    }//==> esto está OK
+    }
 }

@@ -58,7 +58,7 @@ public class Database {
             connection = getConnection();
             Statement statement = connection.createStatement();
             statement.execute(SQL_CREATE_TABLE_USUARIOS);
-//            statement.execute(SQL_CREATE_TABLE_EQUIPOS);
+            statement.execute(SQL_CREATE_TABLE_EQUIPOS);
 //            statement.execute(SQL_CREATE_TABLE_SERVICIOS);
 //            statement.execute(SQL_CREATE_TABLE_SOPORTES_TECNICOS);
 
