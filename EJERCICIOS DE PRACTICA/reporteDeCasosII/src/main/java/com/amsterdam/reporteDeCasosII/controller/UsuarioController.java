@@ -66,13 +66,13 @@ public class UsuarioController {
     }
 
     @PutMapping()
-    public ResponseEntity<String> actualizarUsuario(@RequestBody Usuario usuario){
+    public ResponseEntity<Usuario> actualizarUsuario(@RequestBody Usuario usuario){
         Usuario usuarioIdBuscado = usuarioService.buscarUsuario(usuario.getId());
         if (usuarioIdBuscado != null){
             usuarioService.actualizarUsuario(usuario);
-            return ResponseEntity.ok("Se ha modificado el usuario con el ID: "+ usuario.getId() +" de forma correcta,con los siguientes datos:\n NOMBRE COMPLETO: "+ usuario.getNombreCompleto()+"\n CELULAR: "+ usuario.getNumeroCelular()+"\n CORREO: "+ usuario.getCorreo());
+            return ResponseEntity.ok(usuario);
         }else{
-            return ResponseEntity.badRequest().body("No se ha encontrado el usuario que se quiere modificar.");
+            return ResponseEntity.badRequest().build();
         }
     }
 }

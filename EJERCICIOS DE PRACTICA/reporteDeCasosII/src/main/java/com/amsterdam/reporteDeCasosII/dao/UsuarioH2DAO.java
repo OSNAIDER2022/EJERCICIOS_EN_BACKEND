@@ -50,9 +50,9 @@ public class UsuarioH2DAO implements IDao<Usuario>{
     @Override
     public void eliminar(Integer id) {
         Connection connection = null;
-        Usuario usuario = null;
+
         try {
-            LOGGER.info("Se ha comenzado la eliminacion del usuario con el ID: " + id);
+            LOGGER.warn("Se ha comenzado la eliminacion del USUARIO con el ID: " + id);
             connection=Database.getConnection();
             PreparedStatement psDelete = connection.prepareStatement(SQL_DELETE);
             psDelete.setInt(1, id);
@@ -74,7 +74,7 @@ public class UsuarioH2DAO implements IDao<Usuario>{
         Connection connection = null;
 
         try {
-            LOGGER.info("Se ha comenzado la actualizacion de datos para el usuario con el ID: " + usuario.getId());
+            LOGGER.info("Se ha comenzado la actualizacion de datos para el USUARIO con el ID: " + usuario.getId());
             connection = Database.getConnection();
             PreparedStatement psUpdate = connection.prepareStatement(SQL_UPDATE);
             psUpdate.setString(1,usuario.getNombreCompleto());
@@ -100,7 +100,7 @@ public class UsuarioH2DAO implements IDao<Usuario>{
         Usuario usuario = null;
 
         try{
-            LOGGER.info("Se ha comenzado la busqueda de un usuario" + id);
+            LOGGER.info("Se ha comenzado la busqueda de un USUARIO con el ID: " + id);
             connection = Database.getConnection();
             PreparedStatement psSearch = connection.prepareStatement(SQL_SEARCH);
             psSearch.setInt(1,id);

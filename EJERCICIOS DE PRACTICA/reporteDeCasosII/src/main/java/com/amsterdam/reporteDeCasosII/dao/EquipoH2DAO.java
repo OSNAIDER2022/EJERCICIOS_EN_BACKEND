@@ -51,7 +51,10 @@ public class EquipoH2DAO implements IDao<Equipo>{
     @Override
     public void eliminar(Integer id) {
         Connection connection = null;
+        Equipo equipo = null;
+
         try{
+            LOGGER.warn("Se ha comenzado la eliminacion del EQUIPO con el ID: " + id);
             connection = Database.getConnection();
             PreparedStatement psDelete = connection.prepareStatement(SQL_DELETE);
             psDelete.setInt(1,id);
@@ -72,6 +75,7 @@ public class EquipoH2DAO implements IDao<Equipo>{
     public void actualizar(Equipo equipo) {
         Connection connection = null;
         try {
+            LOGGER.info("Se ha comenzado la actualizacion de datos para el EQUIPO con el ID: " + equipo.getId());
             connection = Database.getConnection();
             PreparedStatement psUpdate = connection.prepareStatement(SQL_UPDATE);
             psUpdate.setString(1,equipo.getModelo());
@@ -96,7 +100,7 @@ public class EquipoH2DAO implements IDao<Equipo>{
         Equipo equipo = null;
 
         try {
-            LOGGER.info("Se ha comenzado la busqueda de un EQUIPO con ID:" + id);
+            LOGGER.info("Se ha comenzado la busqueda de un EQUIPO con el ID: " + id);
             connection = Database.getConnection();
             PreparedStatement psSearch = connection.prepareStatement(SQL_SEARCH);
             psSearch.setInt(1,id);

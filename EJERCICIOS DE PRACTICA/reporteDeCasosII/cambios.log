@@ -549,3 +549,113 @@
 [ 2023 - 07 - 10 23:40:04 ] [ INFO  ] [ UsuarioH2DAO:103 ] Se ha comenzado la busqueda de un usuario13
 [ 2023 - 07 - 10 23:40:04 ] [ INFO  ] [ UsuarioH2DAO:111 ] Se ha encontrado la busqueda para el usuario con el ID: 13 bajo el nombre de: Raul Gomez Heredia Peña
 [ 2023 - 07 - 10 23:40:04 ] [ INFO  ] [ UsuarioH2DAO:77 ] Se ha comenzado la actualizacion de datos para el usuario con el ID: 13
+[ 2023 - 07 - 12 21:37:10 ] [ INFO  ] [ ServicioH2DAO:127 ] Se ha comenzado el proceso de guardado de datos para un servicio.
+[ 2023 - 07 - 12 21:37:10 ] [ INFO  ] [ ServicioH2DAO:138 ] Se ha generado el ID: 4 para el servicio a ingresar.
+[ 2023 - 07 - 12 21:37:14 ] [ INFO  ] [ ServicioH2DAO:127 ] Se ha comenzado el proceso de guardado de datos para un servicio.
+[ 2023 - 07 - 12 21:37:14 ] [ INFO  ] [ ServicioH2DAO:138 ] Se ha generado el ID: 5 para el servicio a ingresar.
+[ 2023 - 07 - 12 21:57:21 ] [ INFO  ] [ ServicioH2DAO:133 ] Se ha comenzado el proceso de guardado de datos para un servicio.
+[ 2023 - 07 - 12 21:57:21 ] [ INFO  ] [ ServicioH2DAO:144 ] Se ha generado el ID: 6 para el servicio a ingresar.
+[ 2023 - 07 - 12 21:57:32 ] [ INFO  ] [ ServicioH2DAO:27 ] Se ha iniciado la busqueda de todos los SERVICIOS de la Database
+[ 2023 - 07 - 12 21:57:32 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 21:57:32 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 21:57:32 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 21:57:32 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 21:57:32 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 21:57:32 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 21:57:32 ] [ INFO  ] [ ServicioH2DAO:37 ] Se ha finalizado la busqueda de todos los SERVICIOS de la Database
+[ 2023 - 07 - 12 21:57:32 ] [ INFO  ] [ ServicioH2DAO:27 ] Se ha iniciado la busqueda de todos los SERVICIOS de la Database
+[ 2023 - 07 - 12 21:57:32 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 21:57:32 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 21:57:32 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 21:57:32 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 21:57:32 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 21:57:32 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 21:57:32 ] [ INFO  ] [ ServicioH2DAO:37 ] Se ha finalizado la busqueda de todos los SERVICIOS de la Database
+[ 2023 - 07 - 12 22:10:49 ] [ INFO  ] [ ServicioH2DAO:105 ] Se ha comenzado la busqueda de un SERVICIO con el ID: 2
+[ 2023 - 07 - 12 22:11:30 ] [ INFO  ] [ ServicioH2DAO:105 ] Se ha comenzado la busqueda de un SERVICIO con el ID: 2
+[ 2023 - 07 - 12 22:18:15 ] [ INFO  ] [ ServicioH2DAO:105 ] Se ha comenzado la busqueda de un SERVICIO con el ID: 2
+[ 2023 - 07 - 12 22:18:15 ] [ INFO  ] [ ServicioH2DAO:113 ] Se ha encontrado la busqueda para el SERVICIO con el ID: 2 bajo el nombre de: Mantenimiento Fisico
+[ 2023 - 07 - 12 22:19:23 ] [ INFO  ] [ ServicioH2DAO:105 ] Se ha comenzado la busqueda de un SERVICIO con el ID: 5
+[ 2023 - 07 - 12 22:19:23 ] [ INFO  ] [ ServicioH2DAO:113 ] Se ha encontrado la busqueda para el SERVICIO con el ID: 5 bajo el nombre de: Mantenimiento Fisico
+[ 2023 - 07 - 12 22:19:23 ] [ WARN  ] [ ServicioH2DAO:56 ] Se ha comenzado la eliminacion del SERVICIO con el ID: 5
+[ 2023 - 07 - 12 22:20:41 ] [ INFO  ] [ ServicioH2DAO:27 ] Se ha iniciado la busqueda de todos los SERVICIOS de la Database
+[ 2023 - 07 - 12 22:20:41 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:20:41 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:20:41 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:20:41 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:20:41 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:20:41 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:20:41 ] [ INFO  ] [ ServicioH2DAO:37 ] Se ha finalizado la busqueda de todos los SERVICIOS de la Database
+[ 2023 - 07 - 12 22:20:41 ] [ INFO  ] [ ServicioH2DAO:27 ] Se ha iniciado la busqueda de todos los SERVICIOS de la Database
+[ 2023 - 07 - 12 22:20:41 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:20:41 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:20:41 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:20:41 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:20:41 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:20:41 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:20:41 ] [ INFO  ] [ ServicioH2DAO:37 ] Se ha finalizado la busqueda de todos los SERVICIOS de la Database
+[ 2023 - 07 - 12 22:20:50 ] [ INFO  ] [ ServicioH2DAO:105 ] Se ha comenzado la busqueda de un SERVICIO con el ID: 5
+[ 2023 - 07 - 12 22:20:50 ] [ INFO  ] [ ServicioH2DAO:113 ] Se ha encontrado la busqueda para el SERVICIO con el ID: 5 bajo el nombre de: Mantenimiento Fisico
+[ 2023 - 07 - 12 22:20:50 ] [ WARN  ] [ ServicioH2DAO:56 ] Se ha comenzado la eliminacion del SERVICIO con el ID: 5
+[ 2023 - 07 - 12 22:20:59 ] [ INFO  ] [ ServicioH2DAO:27 ] Se ha iniciado la busqueda de todos los SERVICIOS de la Database
+[ 2023 - 07 - 12 22:20:59 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:20:59 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:20:59 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:20:59 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:20:59 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:20:59 ] [ INFO  ] [ ServicioH2DAO:37 ] Se ha finalizado la busqueda de todos los SERVICIOS de la Database
+[ 2023 - 07 - 12 22:20:59 ] [ INFO  ] [ ServicioH2DAO:27 ] Se ha iniciado la busqueda de todos los SERVICIOS de la Database
+[ 2023 - 07 - 12 22:21:00 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:21:00 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:21:00 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:21:00 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:21:00 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:21:00 ] [ INFO  ] [ ServicioH2DAO:37 ] Se ha finalizado la busqueda de todos los SERVICIOS de la Database
+[ 2023 - 07 - 12 22:21:17 ] [ INFO  ] [ ServicioH2DAO:105 ] Se ha comenzado la busqueda de un SERVICIO con el ID: 6
+[ 2023 - 07 - 12 22:21:17 ] [ INFO  ] [ ServicioH2DAO:113 ] Se ha encontrado la busqueda para el SERVICIO con el ID: 6 bajo el nombre de: Mantenimiento Fisico
+[ 2023 - 07 - 12 22:21:17 ] [ WARN  ] [ ServicioH2DAO:56 ] Se ha comenzado la eliminacion del SERVICIO con el ID: 6
+[ 2023 - 07 - 12 22:21:20 ] [ INFO  ] [ ServicioH2DAO:105 ] Se ha comenzado la busqueda de un SERVICIO con el ID: 6
+[ 2023 - 07 - 12 22:25:57 ] [ INFO  ] [ ServicioH2DAO:105 ] Se ha comenzado la busqueda de un SERVICIO con el ID: 4
+[ 2023 - 07 - 12 22:25:57 ] [ INFO  ] [ ServicioH2DAO:113 ] Se ha encontrado la busqueda para el SERVICIO con el ID: 4 bajo el nombre de: Mantenimiento Fisico
+[ 2023 - 07 - 12 22:32:09 ] [ INFO  ] [ ServicioH2DAO:105 ] Se ha comenzado la busqueda de un SERVICIO con el ID: 4
+[ 2023 - 07 - 12 22:32:10 ] [ INFO  ] [ ServicioH2DAO:113 ] Se ha encontrado la busqueda para el SERVICIO con el ID: 4 bajo el nombre de: Mantenimiento Fisico
+[ 2023 - 07 - 12 22:32:10 ] [ INFO  ] [ ServicioH2DAO:78 ] Se ha comenzado la actualizacion de datos para el SERVICIO con el ID: 4
+[ 2023 - 07 - 12 22:32:59 ] [ INFO  ] [ ServicioH2DAO:105 ] Se ha comenzado la busqueda de un SERVICIO con el ID: 4
+[ 2023 - 07 - 12 22:32:59 ] [ INFO  ] [ ServicioH2DAO:113 ] Se ha encontrado la busqueda para el SERVICIO con el ID: 4 bajo el nombre de: Mantenimiento Logico
+[ 2023 - 07 - 12 22:32:59 ] [ INFO  ] [ ServicioH2DAO:78 ] Se ha comenzado la actualizacion de datos para el SERVICIO con el ID: 4
+[ 2023 - 07 - 12 22:39:08 ] [ INFO  ] [ ServicioH2DAO:133 ] Se ha comenzado el proceso de guardado de datos para un servicio.
+[ 2023 - 07 - 12 22:39:08 ] [ INFO  ] [ ServicioH2DAO:144 ] Se ha generado el ID: 7 para el servicio a ingresar.
+[ 2023 - 07 - 12 22:39:18 ] [ INFO  ] [ EquipoH2DAO:27 ] Se ha iniciado la busqueda de todos los EQUIPOS de la Database
+[ 2023 - 07 - 12 22:39:18 ] [ INFO  ] [ EquipoH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:66DG3H5Y4U    
+[ 2023 - 07 - 12 22:39:18 ] [ INFO  ] [ EquipoH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:443536GG
+[ 2023 - 07 - 12 22:39:18 ] [ INFO  ] [ EquipoH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:0979KO
+[ 2023 - 07 - 12 22:39:18 ] [ INFO  ] [ EquipoH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:0979KO
+[ 2023 - 07 - 12 22:39:18 ] [ INFO  ] [ EquipoH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:443536GG
+[ 2023 - 07 - 12 22:39:18 ] [ INFO  ] [ EquipoH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:0979KO
+[ 2023 - 07 - 12 22:39:18 ] [ INFO  ] [ EquipoH2DAO:37 ] Se ha finalizado la busqueda de todos los EQUIPOS de la Database
+[ 2023 - 07 - 12 22:39:18 ] [ INFO  ] [ EquipoH2DAO:27 ] Se ha iniciado la busqueda de todos los EQUIPOS de la Database
+[ 2023 - 07 - 12 22:39:18 ] [ INFO  ] [ EquipoH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:66DG3H5Y4U    
+[ 2023 - 07 - 12 22:39:18 ] [ INFO  ] [ EquipoH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:443536GG
+[ 2023 - 07 - 12 22:39:18 ] [ INFO  ] [ EquipoH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:0979KO
+[ 2023 - 07 - 12 22:39:18 ] [ INFO  ] [ EquipoH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:0979KO
+[ 2023 - 07 - 12 22:39:18 ] [ INFO  ] [ EquipoH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:443536GG
+[ 2023 - 07 - 12 22:39:18 ] [ INFO  ] [ EquipoH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:0979KO
+[ 2023 - 07 - 12 22:39:18 ] [ INFO  ] [ EquipoH2DAO:37 ] Se ha finalizado la busqueda de todos los EQUIPOS de la Database
+[ 2023 - 07 - 12 22:39:35 ] [ INFO  ] [ ServicioH2DAO:27 ] Se ha iniciado la busqueda de todos los SERVICIOS de la Database
+[ 2023 - 07 - 12 22:39:35 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:39:35 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:39:35 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:39:35 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Logico
+[ 2023 - 07 - 12 22:39:35 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Soporte Remoto
+[ 2023 - 07 - 12 22:39:35 ] [ INFO  ] [ ServicioH2DAO:37 ] Se ha finalizado la busqueda de todos los SERVICIOS de la Database
+[ 2023 - 07 - 12 22:39:35 ] [ INFO  ] [ ServicioH2DAO:27 ] Se ha iniciado la busqueda de todos los SERVICIOS de la Database
+[ 2023 - 07 - 12 22:39:35 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:39:35 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:39:35 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:39:35 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Logico
+[ 2023 - 07 - 12 22:39:35 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Soporte Remoto
+[ 2023 - 07 - 12 22:39:35 ] [ INFO  ] [ ServicioH2DAO:37 ] Se ha finalizado la busqueda de todos los SERVICIOS de la Database
+[ 2023 - 07 - 12 22:40:10 ] [ INFO  ] [ ServicioH2DAO:105 ] Se ha comenzado la busqueda de un SERVICIO con el ID: 6
+[ 2023 - 07 - 12 22:40:19 ] [ INFO  ] [ ServicioH2DAO:105 ] Se ha comenzado la busqueda de un SERVICIO con el ID: 1
+[ 2023 - 07 - 12 22:40:19 ] [ INFO  ] [ ServicioH2DAO:113 ] Se ha encontrado la busqueda para el SERVICIO con el ID: 1 bajo el nombre de: Mantenimiento Fisico
+[ 2023 - 07 - 12 22:40:19 ] [ WARN  ] [ ServicioH2DAO:56 ] Se ha comenzado la eliminacion del SERVICIO con el ID: 1

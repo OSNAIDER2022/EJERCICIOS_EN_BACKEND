@@ -1,17 +1,19 @@
 package com.amsterdam.reporteDeCasosII.service;
 
 import com.amsterdam.reporteDeCasosII.dao.IDao;
+import com.amsterdam.reporteDeCasosII.dao.ServicioH2DAO;
 import com.amsterdam.reporteDeCasosII.model.Servicio;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-
+@Service
 public class ServicioService {
     private IDao<Servicio> servicioIDao;
 
     //CONSTRUCTOR:
-    public ServicioService(IDao<Servicio> servicioIDao) {
-        this.servicioIDao = servicioIDao;
+    public ServicioService() {
+        servicioIDao = new ServicioH2DAO();
     }
 
     //METODOS:

@@ -22,6 +22,9 @@ public class Servicio {
         this.descripcion = descripcion;
         this.precio = precio;
     }
+    //VACIO MARCADO POR DEFAULT:
+    public Servicio() {
+    }
 
     //GETTERS AND SETTERS
     public Integer getId() {

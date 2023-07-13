@@ -53,16 +53,16 @@ public class EquipoController {
         if (equipoABuscar != null){
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Se ha eliminado los datos para el usuario");
         }else {
-            return ResponseEntity.badRequest().body("Se ha realizado la eliminacion del Equipo con el ID: " + id);
+            return ResponseEntity.badRequest().body("No se ha logrado realizar la eliminacion del equipo");
         }
     }
 
     @PutMapping
-    public ResponseEntity<String> actualizarEquipo(@RequestBody Equipo equipo){
+    public ResponseEntity<Equipo> actualizarEquipo(@RequestBody Equipo equipo){
         Equipo equipoABuscar = equipoService.buscarEquipo(equipo.getId());
         if (equipoABuscar != null){
             equipoService.actualizarEquipo(equipo);
-            return ResponseEntity.ok("Se ha actualizado los datos del equipo con el ID: "+equipo.getId()+" con los siguientes datos:\nMODELO: "+ equipo.getModelo()+"\nSERIAL: "+equipo.getSerial());
+            return ResponseEntity.ok(equipo);
         }else {
             return ResponseEntity.badRequest().build();
         }
