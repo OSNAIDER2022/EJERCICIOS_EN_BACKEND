@@ -659,3 +659,20 @@
 [ 2023 - 07 - 12 22:40:19 ] [ INFO  ] [ ServicioH2DAO:105 ] Se ha comenzado la busqueda de un SERVICIO con el ID: 1
 [ 2023 - 07 - 12 22:40:19 ] [ INFO  ] [ ServicioH2DAO:113 ] Se ha encontrado la busqueda para el SERVICIO con el ID: 1 bajo el nombre de: Mantenimiento Fisico
 [ 2023 - 07 - 12 22:40:19 ] [ WARN  ] [ ServicioH2DAO:56 ] Se ha comenzado la eliminacion del SERVICIO con el ID: 1
+[ 2023 - 07 - 12 22:47:15 ] [ INFO  ] [ ServicioH2DAO:133 ] Se ha comenzado el proceso de guardado de datos para un servicio.
+[ 2023 - 07 - 12 22:47:15 ] [ INFO  ] [ ServicioH2DAO:144 ] Se ha generado el ID: 8 para el servicio a ingresar.
+[ 2023 - 07 - 12 22:47:34 ] [ INFO  ] [ ServicioH2DAO:105 ] Se ha comenzado la busqueda de un SERVICIO con el ID: 2
+[ 2023 - 07 - 12 22:47:35 ] [ INFO  ] [ ServicioH2DAO:113 ] Se ha encontrado la busqueda para el SERVICIO con el ID: 2 bajo el nombre de: Mantenimiento Fisico
+[ 2023 - 07 - 12 22:47:35 ] [ WARN  ] [ ServicioH2DAO:56 ] Se ha comenzado la eliminacion del SERVICIO con el ID: 2
+[ 2023 - 07 - 12 22:47:44 ] [ INFO  ] [ ServicioH2DAO:27 ] Se ha iniciado la busqueda de todos los SERVICIOS de la Database
+[ 2023 - 07 - 12 22:47:44 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:47:44 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Logico
+[ 2023 - 07 - 12 22:47:44 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Soporte Remoto
+[ 2023 - 07 - 12 22:47:44 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Soporte Remoto
+[ 2023 - 07 - 12 22:47:44 ] [ INFO  ] [ ServicioH2DAO:37 ] Se ha finalizado la busqueda de todos los SERVICIOS de la Database
+[ 2023 - 07 - 12 22:47:44 ] [ INFO  ] [ ServicioH2DAO:27 ] Se ha iniciado la busqueda de todos los SERVICIOS de la Database
+[ 2023 - 07 - 12 22:47:44 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Fisico
+[ 2023 - 07 - 12 22:47:44 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Mantenimiento Logico
+[ 2023 - 07 - 12 22:47:44 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Soporte Remoto
+[ 2023 - 07 - 12 22:47:44 ] [ INFO  ] [ ServicioH2DAO:35 ] SE ha de mostrar el EQUIPO de serial:Soporte Remoto
+[ 2023 - 07 - 12 22:47:44 ] [ INFO  ] [ ServicioH2DAO:37 ] Se ha finalizado la busqueda de todos los SERVICIOS de la Database

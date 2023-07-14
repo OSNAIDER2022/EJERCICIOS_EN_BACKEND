@@ -12,11 +12,11 @@ import java.util.List;
 
 public class SoporteTecnicoH2DAO implements IDao<SoporteTecnico>{
     //ESTABLECEMOS CONSTANTES:
-    private static final String SQL_ALLSEARCH = "SELECT * FROM soportesTecnicos;";
-    private static final String SQL_DELETE = "DELETE FROM soportesTecnicos WHERE ID = ?;";
-    private static final String SQL_UPDATE = "UPDATE soportesTecnicos SET usuario_id = ?, SET equipo_id = ?, SET servicio_id = ?, SET asunto = ?, SET descripcion = ?, SET observaciones = ?, SET fecha = ? WHERE id = ?;";
-    private static final String SQL_SEARCH = "SELECT * FROM soportesTecnicos WHERE ID = ?;";
-    private static final String SQL_INSERT = "INSERT INTO soportesTecnicos (usuario_id, equipo_id, servicio_id, asunto, descripcion, observaciones, fecha) VALUES(?,?,?,?,?,?,?);";
+    private static final String SQL_ALLSEARCH = "SELECT * FROM SOPORTES_TECNICOS;";
+    private static final String SQL_DELETE = "DELETE FROM SOPORTES_TECNICOS WHERE ID = ?;";
+    private static final String SQL_UPDATE = "UPDATE SOPORTES_TECNICOS SET USUARIO_ID = ?, EQUIPO_ID = ?, SERVICIO_ID = ?, ASUNTO = ?, DESCRIPCION = ?, OBSERVACIONES = ?, FECHA = ? WHERE ID = ?;";
+    private static final String SQL_SEARCH = "SELECT * FROM SOPORTES_TECNICOS WHERE ID = ?;";
+    private static final String SQL_INSERT = "INSERT INTO SOPORTES_TECNICOS (USUARIO_ID, EQUIPO_ID, SERVICIO_ID, ASUNTO, DESCRIPCION, OBSERVACIONES, FECHA) VALUES(?,?,?,?,?,?,?);";
     private static final Logger LOGGER = Logger.getLogger(SoporteTecnicoH2DAO.class);
 
     //SOBREESCRITURA DE METODOS:
@@ -51,7 +51,7 @@ public class SoporteTecnicoH2DAO implements IDao<SoporteTecnico>{
         }finally {
             try {
                 connection.close();
-            }catch (SQLException e2){
+            }catch (Exception e2){
                 e2.printStackTrace();
             }
         }
@@ -62,12 +62,11 @@ public class SoporteTecnicoH2DAO implements IDao<SoporteTecnico>{
     @Override
     public void eliminar(Integer id) {
         Connection connection = null;
-        SoporteTecnico soporteTecnico = null;
 
         try {
             connection = Database.getConnection();
             PreparedStatement psDelete = connection.prepareStatement(SQL_DELETE);
-            psDelete.setInt(1, soporteTecnico.getId());
+            psDelete.setInt(1, id);
             psDelete.execute();
 
         }catch (Exception e1){
@@ -75,7 +74,7 @@ public class SoporteTecnicoH2DAO implements IDao<SoporteTecnico>{
         }finally {
             try {
                 connection.close();
-            }catch (SQLException e2){
+            }catch (Exception e2){
                 e2.printStackTrace();
             }
         }
