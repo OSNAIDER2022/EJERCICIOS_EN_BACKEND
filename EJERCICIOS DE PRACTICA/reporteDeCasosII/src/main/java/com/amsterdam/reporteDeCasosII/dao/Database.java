@@ -32,11 +32,11 @@ public class Database {
         try{
             connection = getConnection();
             Statement statement = connection.createStatement();
+//            statement.execute(SQL_VERIFY_TABLE_EXISTS);
             statement.execute(SQL_CREATE_TABLE_USUARIOS);
             statement.execute(SQL_CREATE_TABLE_EQUIPOS);
             statement.execute(SQL_CREATE_TABLE_SERVICIOS);
             statement.execute(SQL_CREATE_TABLE_SOPORTES_TECNICOS);
-            statement.execute(SQL_VERIFY_TABLE_EXISTS);
         }catch (Exception e1){
             e1.printStackTrace();
         }finally {

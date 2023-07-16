@@ -37,6 +37,10 @@ public class SoporteTecnico {
         this.fecha = fecha;
     }
 
+    //vacio por DEFAULT
+    public SoporteTecnico() {
+    }
+
     //GETTERS AND SETTERS
     public Integer getId() {
         return id;
