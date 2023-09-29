@@ -2,11 +2,12 @@ package com.amsterdam.reporteDeCasosII.dao;
 
 import com.amsterdam.reporteDeCasosII.model.Usuario;
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Repository;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-
+@Repository
 public class UsuarioH2DAO implements IDao<Usuario>{
     //ESTABLECEMOS CONSTANTES:
     private static final String SQL_ALLSEARCH = "SELECT * FROM USUARIOS;";

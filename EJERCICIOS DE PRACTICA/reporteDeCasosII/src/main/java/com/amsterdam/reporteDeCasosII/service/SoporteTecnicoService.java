@@ -12,8 +12,8 @@ public class SoporteTecnicoService {
     private IDao<SoporteTecnico> soporteTecnicoIDao;
 
     //CONSTRUCTOR:
-    public SoporteTecnicoService() {
-        soporteTecnicoIDao = new SoporteTecnicoH2DAO();
+    public SoporteTecnicoService(IDao<SoporteTecnico> soporteTecnicoIDao) {
+        this.soporteTecnicoIDao = soporteTecnicoIDao;
     }
 
     //METODOS:

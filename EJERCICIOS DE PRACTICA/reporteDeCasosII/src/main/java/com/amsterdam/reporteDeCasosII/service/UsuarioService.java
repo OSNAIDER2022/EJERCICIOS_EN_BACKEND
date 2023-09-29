@@ -13,10 +13,9 @@ public class UsuarioService {
 
     //ESTO ES TEMPORAL:
     //CONSTRUCTOR:
-    public UsuarioService() {
-        usuarioIDao = new UsuarioH2DAO();
+    public UsuarioService(IDao<Usuario> usuarioIDao) {
+        this.usuarioIDao = usuarioIDao;
     }
-
 
     //METODOS:
     public Usuario guardarUsuario(Usuario usuario) {

@@ -1201,3 +1201,41 @@
 [ 2023 - 07 - 15 19:20:12 ] [ INFO  ] [ UsuarioH2DAO:111 ] Se ha encontrado la busqueda para el usuario con el ID: 6 bajo el nombre de: Mayerli Zambrano
 [ 2023 - 07 - 15 19:20:12 ] [ INFO  ] [ UsuarioH2DAO:103 ] Se ha comenzado la busqueda de un USUARIO con el ID: 6
 [ 2023 - 07 - 15 19:20:12 ] [ INFO  ] [ UsuarioH2DAO:111 ] Se ha encontrado la busqueda para el usuario con el ID: 6 bajo el nombre de: Mayerli Zambrano
+[ 2023 - 07 - 16 12:06:24 ] [ INFO  ] [ UsuarioH2DAO:27 ] Se ha iniciado la busqueda de todos los USUARIOS de la Database
+[ 2023 - 07 - 16 12:06:24 ] [ INFO  ] [ UsuarioH2DAO:36 ] Se ha finalizado la busqueda de todos los USUARIOS de la Database
+[ 2023 - 07 - 16 12:06:24 ] [ INFO  ] [ UsuarioH2DAO:27 ] Se ha iniciado la busqueda de todos los USUARIOS de la Database
+[ 2023 - 07 - 16 12:06:24 ] [ INFO  ] [ UsuarioH2DAO:36 ] Se ha finalizado la busqueda de todos los USUARIOS de la Database
+[ 2023 - 07 - 16 12:18:30 ] [ INFO  ] [ UsuarioH2DAO:27 ] Se ha iniciado la busqueda de todos los USUARIOS de la Database
+[ 2023 - 07 - 16 12:18:30 ] [ INFO  ] [ UsuarioH2DAO:36 ] Se ha finalizado la busqueda de todos los USUARIOS de la Database
+[ 2023 - 07 - 16 12:18:30 ] [ INFO  ] [ UsuarioH2DAO:27 ] Se ha iniciado la busqueda de todos los USUARIOS de la Database
+[ 2023 - 07 - 16 12:18:30 ] [ INFO  ] [ UsuarioH2DAO:36 ] Se ha finalizado la busqueda de todos los USUARIOS de la Database
+[ 2023 - 07 - 16 12:19:55 ] [ INFO  ] [ UsuarioH2DAO:131 ] Se ha iniciado el guardado del USUARIO: Mayerli Zambrano
+[ 2023 - 07 - 16 12:19:55 ] [ INFO  ] [ UsuarioH2DAO:141 ] Se ha generado el ID: 1 para el USUARIO: Mayerli Zambrano
+[ 2023 - 07 - 16 12:20:24 ] [ INFO  ] [ UsuarioH2DAO:131 ] Se ha iniciado el guardado del USUARIO: Antony Mendez
+[ 2023 - 07 - 16 12:20:24 ] [ INFO  ] [ UsuarioH2DAO:141 ] Se ha generado el ID: 2 para el USUARIO: Antony Mendez
+[ 2023 - 07 - 16 12:20:51 ] [ INFO  ] [ UsuarioH2DAO:131 ] Se ha iniciado el guardado del USUARIO: Camilo Guerra
+[ 2023 - 07 - 16 12:20:51 ] [ INFO  ] [ UsuarioH2DAO:141 ] Se ha generado el ID: 3 para el USUARIO: Camilo Guerra
+[ 2023 - 07 - 16 12:22:13 ] [ INFO  ] [ EquipoH2DAO:131 ] Se ha comenzado el proceso de guardado de datos para un equipo.
+[ 2023 - 07 - 16 12:22:13 ] [ INFO  ] [ EquipoH2DAO:141 ] Se ha generado el ID: 1 para el equipo a ingresar.
+[ 2023 - 07 - 16 12:22:45 ] [ INFO  ] [ EquipoH2DAO:131 ] Se ha comenzado el proceso de guardado de datos para un equipo.
+[ 2023 - 07 - 16 12:22:45 ] [ INFO  ] [ EquipoH2DAO:141 ] Se ha generado el ID: 2 para el equipo a ingresar.
+[ 2023 - 07 - 16 12:23:44 ] [ INFO  ] [ EquipoH2DAO:131 ] Se ha comenzado el proceso de guardado de datos para un equipo.
+[ 2023 - 07 - 16 12:23:44 ] [ INFO  ] [ EquipoH2DAO:141 ] Se ha generado el ID: 3 para el equipo a ingresar.
+[ 2023 - 07 - 16 12:24:07 ] [ INFO  ] [ ServicioH2DAO:133 ] Se ha comenzado el proceso de guardado de datos para un servicio.
+[ 2023 - 07 - 16 12:24:07 ] [ INFO  ] [ ServicioH2DAO:144 ] Se ha generado el ID: 1 para el servicio a ingresar.
+[ 2023 - 07 - 16 12:24:52 ] [ INFO  ] [ ServicioH2DAO:133 ] Se ha comenzado el proceso de guardado de datos para un servicio.
+[ 2023 - 07 - 16 12:24:52 ] [ INFO  ] [ ServicioH2DAO:144 ] Se ha generado el ID: 2 para el servicio a ingresar.
+[ 2023 - 07 - 16 12:26:27 ] [ INFO  ] [ SoporteTecnicoH2DAO:174 ] Se ha iniciado el guardado del SOPORTE TECNICO de asunto: Equipo con problemas de rendimiento
+[ 2023 - 07 - 16 12:26:27 ] [ INFO  ] [ EquipoH2DAO:131 ] Se ha comenzado el proceso de guardado de datos para un equipo.
+[ 2023 - 07 - 16 12:26:27 ] [ INFO  ] [ ServicioH2DAO:133 ] Se ha comenzado el proceso de guardado de datos para un servicio.
+[ 2023 - 07 - 16 12:29:45 ] [ INFO  ] [ UsuarioH2DAO:103 ] Se ha comenzado la busqueda de un USUARIO con el ID: 1
+[ 2023 - 07 - 16 12:29:45 ] [ INFO  ] [ UsuarioH2DAO:111 ] Se ha encontrado la busqueda para el usuario con el ID: 1 bajo el nombre de: Mayerli Zambrano
+[ 2023 - 07 - 16 12:29:45 ] [ INFO  ] [ UsuarioH2DAO:103 ] Se ha comenzado la busqueda de un USUARIO con el ID: 1
+[ 2023 - 07 - 16 12:29:45 ] [ INFO  ] [ UsuarioH2DAO:111 ] Se ha encontrado la busqueda para el usuario con el ID: 1 bajo el nombre de: Mayerli Zambrano
+[ 2023 - 07 - 16 12:30:01 ] [ INFO  ] [ EquipoH2DAO:103 ] Se ha comenzado la busqueda de un EQUIPO con el ID: 1
+[ 2023 - 07 - 16 12:30:01 ] [ INFO  ] [ EquipoH2DAO:111 ] Se ha encontrado la busqueda para el EQUIPO con el ID: 1 bajo el serial: 0979KO
+[ 2023 - 07 - 16 12:30:01 ] [ INFO  ] [ EquipoH2DAO:103 ] Se ha comenzado la busqueda de un EQUIPO con el ID: 1
+[ 2023 - 07 - 16 12:30:01 ] [ INFO  ] [ EquipoH2DAO:111 ] Se ha encontrado la busqueda para el EQUIPO con el ID: 1 bajo el serial: 0979KO
+[ 2023 - 07 - 16 12:30:10 ] [ INFO  ] [ ServicioH2DAO:105 ] Se ha comenzado la busqueda de un SERVICIO con el ID: 1
+[ 2023 - 07 - 16 12:30:10 ] [ INFO  ] [ ServicioH2DAO:113 ] Se ha encontrado la busqueda para el SERVICIO con el ID: 1 bajo el nombre de: Soporte Remoto
+[ 2023 - 07 - 16 12:30:19 ] [ INFO  ] [ SoporteTecnicoH2DAO:174 ] Se ha iniciado el guardado del SOPORTE TECNICO de asunto: Equipo con problemas de rendimiento

@@ -2,11 +2,13 @@ package com.amsterdam.reporteDeCasosII.dao;
 
 import com.amsterdam.reporteDeCasosII.model.Servicio;
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Repository;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class ServicioH2DAO implements IDao<Servicio>{
     //ESTABLECEMOS CONSTANTES:
     private static final String SQL_ALLSEARCH = "SELECT * FROM SERVICIOS;";

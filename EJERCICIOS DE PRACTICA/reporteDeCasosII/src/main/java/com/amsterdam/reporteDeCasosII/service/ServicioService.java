@@ -12,8 +12,8 @@ public class ServicioService {
     private IDao<Servicio> servicioIDao;
 
     //CONSTRUCTOR:
-    public ServicioService() {
-        servicioIDao = new ServicioH2DAO();
+    public ServicioService(IDao<Servicio> servicioIDao) {
+        this.servicioIDao = servicioIDao;
     }
 
     //METODOS:

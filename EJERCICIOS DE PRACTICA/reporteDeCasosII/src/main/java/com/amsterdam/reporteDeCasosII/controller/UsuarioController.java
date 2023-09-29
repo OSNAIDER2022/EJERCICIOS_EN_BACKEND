@@ -2,12 +2,9 @@ package com.amsterdam.reporteDeCasosII.controller;
 
 import com.amsterdam.reporteDeCasosII.model.Usuario;
 import com.amsterdam.reporteDeCasosII.service.UsuarioService;
-import jakarta.websocket.server.PathParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -40,6 +37,7 @@ public class UsuarioController {
         if(usuarioService.buscarTodosLosUsuarios() != null){
             return ResponseEntity.ok(usuarioService.buscarTodosLosUsuarios());
         }else {
+            System.out.println("la tabla se encuentra vacia");
             return ResponseEntity.badRequest().build();
         }
     }

@@ -12,8 +12,8 @@ public class EquipoService {
     private IDao<Equipo> equipoIDao;
 
     //CONTRUCTOR:
-    public EquipoService(){
-        equipoIDao = new EquipoH2DAO();
+    public EquipoService(IDao<Equipo> equipoIDao) {
+        this.equipoIDao = equipoIDao;
     }
 
     //METODOS:

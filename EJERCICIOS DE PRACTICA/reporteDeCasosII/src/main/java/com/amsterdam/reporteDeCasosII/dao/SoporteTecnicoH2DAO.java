@@ -5,11 +5,12 @@ import com.amsterdam.reporteDeCasosII.model.Servicio;
 import com.amsterdam.reporteDeCasosII.model.SoporteTecnico;
 import com.amsterdam.reporteDeCasosII.model.Usuario;
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Repository;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-
+@Repository
 public class SoporteTecnicoH2DAO implements IDao<SoporteTecnico>{
     //ESTABLECEMOS CONSTANTES:
     private static final String SQL_ALLSEARCH = "SELECT * FROM SOPORTES_TECNICOS;";

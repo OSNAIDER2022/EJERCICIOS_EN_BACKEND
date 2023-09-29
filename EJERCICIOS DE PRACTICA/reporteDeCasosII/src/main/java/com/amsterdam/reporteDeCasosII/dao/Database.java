@@ -1,10 +1,12 @@
 package com.amsterdam.reporteDeCasosII.dao;
 
+import org.springframework.stereotype.Repository;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
-
+@Repository
 public class Database {
     //ATRIBUTOS:
     private static final String SQL_VERIFY_TABLE_EXISTS = "DROP TABLE IF EXISTS USUARIOS, EQUIPOS, SERVICIOS, SOPORTES_TECNICOS;";
@@ -20,7 +22,10 @@ public class Database {
             "  DESCRIPCION LONGTEXT NOT NULL,\n" +
             "  OBSERVACIONES MEDIUMTEXT NOT NULL,\n" +
             "  FECHA DATE NOT NULL,\n" +
-            "  PRIMARY KEY (ID));";
+            "  PRIMARY KEY (ID),"+
+            "  FOREIGN KEY(USUARIO_ID) REFERENCES USUARIOS(ID) ON DELETE CASCADE ON UPDATE CASCADE,"+
+            "  FOREIGN KEY(EQUIPO_ID) REFERENCES EQUIPOS(ID) ON DELETE CASCADE ON UPDATE CASCADE,"+
+            "  FOREIGN KEY(SERVICIO_ID) REFERENCES SERVICIOS(ID) ON DELETE CASCADE ON UPDATE CASCADE);";
 
     //METODOS
     public static Connection getConnection() throws Exception{
@@ -42,7 +47,7 @@ public class Database {
         }finally {
             try{
                 connection.close();
-            }catch (SQLException e2){
+            }catch (Exception e2){
                 e2.printStackTrace();
             }
         }

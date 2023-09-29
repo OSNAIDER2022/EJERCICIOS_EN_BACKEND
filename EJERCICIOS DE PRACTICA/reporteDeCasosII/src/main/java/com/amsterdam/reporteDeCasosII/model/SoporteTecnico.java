@@ -1,3 +1,4 @@
+
 package com.amsterdam.reporteDeCasosII.model;
 
 import java.time.LocalDate;
